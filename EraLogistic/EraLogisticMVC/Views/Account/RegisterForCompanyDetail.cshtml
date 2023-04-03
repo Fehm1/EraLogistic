@@ -1,0 +1,431 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- login17:56  -->
+<head>
+    <meta charset="utf-8" />
+    <title>Login, Amira - Creative Multipurpose Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/assets/img/favicon.png">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/skins/yellow.css" />
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="~/assets/css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="~/assets/css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="~/assets/css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="~/assets/css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="~/assets/css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="~/assets/css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="~/assets/css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="~/assets/css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="~/assets/css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="~/assets/css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/styleswitcher.css" />
+
+    <!-- Template JS Files -->
+    <script src="~/assets/js/modernizr.js"></script>
+
+</head>
+
+<body class="double-diagonal dark auth-page">
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="logopreloader">
+            <img src="~/assets/img/styleswitcher/logos/yellow.png" alt="logo-black">
+        </div>
+        <div class="loader" id="loader"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <div class="container-fluid user-auth">
+            <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+                <!-- Logo Starts -->
+                <a class="logo" href="index-kenburns.html">
+                    <img id="single-logo" class="img-responsive" src="~/assets/img/styleswitcher/logos/yellow.png" alt="logo">
+                </a>
+                <!-- Logo Ends -->
+            </div>
+            <div>
+                <div class="form-container">
+                    <div>
+                        <!-- Main Heading Starts -->
+                        <div class="text-center top-text">
+                            <h1>About <span>Company</span></h1>
+                            <p>Intrduce your company!</p>
+                        </div>
+                        <!-- Main Heading Ends -->
+                        <!-- Form Starts -->
+                        <form class="">
+
+                            <div>
+                                <!-- Input Field Starts -->
+                                <div class="form-group">
+                                    <label class="form-check-label">About company<sup style="color: orange">*</sup></label>
+                                    <textarea style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="About company" rows="4"></textarea>
+                                </div>
+                                <!-- Input Field Ends -->
+                            </div>
+
+                            <div>
+                                <label>Count of Storage<sup style="color: orange">*</sup></label>
+                                <div class="form-group">
+                                    <input style="background-color: #343434; border:1px solid #444" class="form-control" type="number" id="input" onblur="getVal()">
+                                </div>
+                            </div>
+
+                            <div id="div">
+                            </div>
+
+
+                            <!-- Submit Form Button Starts -->
+                            <div class="form-group">
+                                <button class="custom-button login" type="submit">Register</button>
+                            </div>
+                            <!-- Submit Form Button Ends -->
+                        </form>
+                        <!-- Form Ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Wrapper Ends -->
+    <!-- Template JS Files -->
+    <script src="~/assets/js/jquery-2.2.4.min.js"></script>
+    <script src="~/assets/js/plugins/jquery.easing.1.3.js"></script>
+    <script src="~/assets/js/plugins/bootstrap.min.js"></script>
+
+    <!-- Live Style Switcher JS File - only demo -->
+    <script src="~/assets/js/styleswitcher.js"></script>
+
+    <!-- Main JS Initialization File -->
+    <script src="~/assets/js/custom.js"></script>
+</body>
+
+
+</html>
+
+<script>
+    let div = document.getElementById("div");
+    let divCount = 0;
+    let lastValue = 0;
+
+    function getVal() {
+        let val = document.getElementById("input").value;
+        console.log(val);
+
+        if (divCount == 0) 
+        {
+            for (let i = 0; i < val; i++) {
+                div.innerHTML +=
+                    `
+                                        <div id="${divCount += 1}">
+                                                        <div class="row">
+                                                            <!-- Input Field Starts -->
+                                                            <div class="col-md-6">
+                                                                <label>From<sup style="color: orange">*</sup></label>
+                                                                <div class="form-group">
+                                                                    <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Country" type="text">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="City" type="text">
+                                                                </div>
+                                                            </div>
+                                                            <!-- Input Field Ends -->
+                                                            <!-- Input Field Starts -->
+                                                            <div class="col-md-6">
+                                                                <label>To<sup style="color: orange">*</sup></label>
+                                                                <div class="form-group">
+                                                                    <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Country" type="text">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="City" type="text">
+                                                                </div>
+                                                            </div>
+                                                            <!-- Input Field Ends -->
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <!-- Input Field Starts -->
+                                                            <div class="col-md-5">
+                                                                <label>Price for 1m<sup>3</sup><sup style="color: orange">*</sup></label>
+                                                                <div class="form-group">
+                                                                    <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Price" type="text">
+                                                                </div>
+                                                            </div>
+                                                            <!-- Input Field Ends -->
+                                                            <!-- Input Field Starts -->
+                                                            <div class="col-md-4">
+                                                                <label>About Transport<sup style="color: orange">*</sup></label>
+                                                                <div class="row">
+                                                                    <div class="col-md-5">
+                                                                        <div class="form-group">
+                                                                            <input class="form-check-input" type="checkbox">
+                                                                            <label class="form-check-label">Airway</label>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input class="form-check-input" type="checkbox">
+                                                                            <label class="form-check-label">Road</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-7">
+                                                                        <div class="form-group">
+                                                                            <input class="form-check-input" type="checkbox">
+                                                                            <label class="form-check-label">Railway</label>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input class="form-check-input" type="checkbox">
+                                                                            <label class="form-check-label">Waterway</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Input Field Ends -->
+                                                            <!-- Input Field Starts -->
+                                                            <div class="col-md-3">
+                                                                <label>Type of Load<sup style="color: orange">*</sup></label>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group">
+                                                                            <input class="form-check-input" type="checkbox">
+                                                                            <label class="form-check-label">Solid</label>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input class="form-check-input" type="checkbox">
+                                                                            <label class="form-check-label">Liguid</label>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input class="form-check-input" type="checkbox">
+                                                                            <label class="form-check-label">Gaseous</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <!-- Input Field Ends -->
+                                                        </div>
+                                                    </div>
+                            `
+            }
+            lastValue = divCount
+        }
+        else
+        {
+            if (val > lastValue) {
+                for (let i = 0; i < val - lastValue; i++) {
+                    div.innerHTML +=
+                        `
+                                            <div id="${divCount += 1}">
+                                                            <div class="row">
+                                                                <!-- Input Field Starts -->
+                                                                <div class="col-md-6">
+                                                                    <label>From<sup style="color: orange">*</sup></label>
+                                                                    <div class="form-group">
+                                                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Country" type="text">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="City" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Input Field Ends -->
+                                                                <!-- Input Field Starts -->
+                                                                <div class="col-md-6">
+                                                                    <label>To<sup style="color: orange">*</sup></label>
+                                                                    <div class="form-group">
+                                                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Country" type="text">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="City" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Input Field Ends -->
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <!-- Input Field Starts -->
+                                                                <div class="col-md-5">
+                                                                    <label>Price for 1m<sup>3</sup><sup style="color: orange">*</sup></label>
+                                                                    <div class="form-group">
+                                                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Price" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Input Field Ends -->
+                                                                <!-- Input Field Starts -->
+                                                                <div class="col-md-4">
+                                                                    <label>About Transport<sup style="color: orange">*</sup></label>
+                                                                    <div class="row">
+                                                                        <div class="col-md-5">
+                                                                            <div class="form-group">
+                                                                                <input class="form-check-input" type="checkbox">
+                                                                                <label class="form-check-label">Airway</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <input class="form-check-input" type="checkbox">
+                                                                                <label class="form-check-label">Road</label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-7">
+                                                                            <div class="form-group">
+                                                                                <input class="form-check-input" type="checkbox">
+                                                                                <label class="form-check-label">Railway</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <input class="form-check-input" type="checkbox">
+                                                                                <label class="form-check-label">Waterway</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Input Field Ends -->
+                                                                <!-- Input Field Starts -->
+                                                                <div class="col-md-3">
+                                                                    <label>Type of Load<sup style="color: orange">*</sup></label>
+                                                                    <div class="row">
+                                                                        <div class="col-md-8">
+                                                                            <div class="form-group">
+                                                                                <input class="form-check-input" type="checkbox">
+                                                                                <label class="form-check-label">Solid</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <input class="form-check-input" type="checkbox">
+                                                                                <label class="form-check-label">Liguid</label>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <input class="form-check-input" type="checkbox">
+                                                                                <label class="form-check-label">Gaseous</label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Input Field Ends -->
+                                                            </div>
+                                                        </div>
+                                `
+                }
+                lastValue = divCount;
+            }
+
+            else
+            {
+                for(let i = 0; i < divCount; i++){
+                    let child = document.getElementById(`${i+1}`);
+                    child.remove();
+                }
+
+                divCount = 0;
+
+                for (let i = 0; i < val; i++) {
+                    div.innerHTML +=
+                        `
+                                                <div id="${divCount += 1}">
+                                                                <div class="row">
+                                                                    <!-- Input Field Starts -->
+                                                                    <div class="col-md-6">
+                                                                        <label>From<sup style="color: orange">*</sup></label>
+                                                                        <div class="form-group">
+                                                                            <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Country" type="text">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="City" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Input Field Ends -->
+                                                                    <!-- Input Field Starts -->
+                                                                    <div class="col-md-6">
+                                                                        <label>To<sup style="color: orange">*</sup></label>
+                                                                        <div class="form-group">
+                                                                            <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Country" type="text">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="City" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Input Field Ends -->
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <!-- Input Field Starts -->
+                                                                    <div class="col-md-5">
+                                                                        <label>Price for 1m<sup>3</sup><sup style="color: orange">*</sup></label>
+                                                                        <div class="form-group">
+                                                                            <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Price" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Input Field Ends -->
+                                                                    <!-- Input Field Starts -->
+                                                                    <div class="col-md-4">
+                                                                        <label>About Transport<sup style="color: orange">*</sup></label>
+                                                                        <div class="row">
+                                                                            <div class="col-md-5">
+                                                                                <div class="form-group">
+                                                                                    <input class="form-check-input" type="checkbox">
+                                                                                    <label class="form-check-label">Airway</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <input class="form-check-input" type="checkbox">
+                                                                                    <label class="form-check-label">Road</label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-7">
+                                                                                <div class="form-group">
+                                                                                    <input class="form-check-input" type="checkbox">
+                                                                                    <label class="form-check-label">Railway</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <input class="form-check-input" type="checkbox">
+                                                                                    <label class="form-check-label">Waterway</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Input Field Ends -->
+                                                                    <!-- Input Field Starts -->
+                                                                    <div class="col-md-3">
+                                                                        <label>Type of Load<sup style="color: orange">*</sup></label>
+                                                                        <div class="row">
+                                                                            <div class="col-md-8">
+                                                                                <div class="form-group">
+                                                                                    <input class="form-check-input" type="checkbox">
+                                                                                    <label class="form-check-label">Solid</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <input class="form-check-input" type="checkbox">
+                                                                                    <label class="form-check-label">Liguid</label>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <input class="form-check-input" type="checkbox">
+                                                                                    <label class="form-check-label">Gaseous</label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Input Field Ends -->
+                                                                </div>
+                                                            </div>
+                                    `
+                }
+                lastValue = divCount;
+            }
+        }
+
+    }
+</script>

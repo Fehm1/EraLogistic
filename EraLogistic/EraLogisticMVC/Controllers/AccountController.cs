@@ -18,5 +18,10 @@ namespace EraLogisticMVC.Controllers
         {
             return View();
         }
+
+        public IActionResult RegisterForCompanyDetail()
+        {
+            return View();
+        }
     }
 }

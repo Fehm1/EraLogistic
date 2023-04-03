@@ -1,5 +1,212 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    Layout = null;
 }
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- login17:56  -->
+<head>
+    <meta charset="utf-8" />
+    <title>Login, Amira - Creative Multipurpose Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/assets/img/favicon.png">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/skins/yellow.css" />
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="~/assets/css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="~/assets/css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="~/assets/css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="~/assets/css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="~/assets/css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="~/assets/css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="~/assets/css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="~/assets/css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="~/assets/css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="~/assets/css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/styleswitcher.css" />
+
+    <!-- Template JS Files -->
+    <script src="~/assets/js/modernizr.js"></script>
+
+</head>
+
+<body class="double-diagonal dark auth-page">
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="logopreloader">
+            <img src="~/assets/img/styleswitcher/logos/yellow.png" alt="logo-black">
+        </div>
+        <div class="loader" id="loader"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <div class="container-fluid user-auth">
+            <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+                <!-- Logo Starts -->
+                <a class="logo" href="index-kenburns.html">
+                    <img id="single-logo" class="img-responsive" src="~/assets/img/styleswitcher/logos/yellow.png" alt="logo">
+                </a>
+                <!-- Logo Ends -->
+            </div>
+            <div>
+                <div class="form-container">
+                    <div>
+                        <!-- Main Heading Starts -->
+                        <div class="text-center top-text">
+                            <h1>Register for <span>Company</span></h1>
+                            <p>Creat account for free!</p>
+                        </div>
+                        <!-- Main Heading Ends -->
+                        <!-- Form Starts -->
+                        <form class="">
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Company name<sup style="color: orange">*</sup></label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Company name" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Company email<sup style="color: orange">*</sup></label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Company email" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Company website</label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Company website" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Company phone<sup style="color: orange">*</sup></label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Company phone" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Country<sup style="color: orange">*</sup></label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Country" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">City<sup style="color: orange">*</sup></label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="City" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Address<sup style="color: orange">*</sup></label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Address" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Zipcode</label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Zipcode">
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Password<sup style="color: orange">*</sup></label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Password" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                                <div class="col-md-6">
+                                    <!-- Input Field Starts -->
+                                    <div class="form-group">
+                                        <label class="form-check-label">Confirm Password<sup style="color: orange">*</sup></label>
+                                        <input style="background-color: #343434; border:1px solid #444" class="form-control" placeholder="Confirm Password" required>
+                                    </div>
+                                    <!-- Input Field Ends -->
+                                </div>
+
+                            </div>
+
+                            <!-- Submit Form Button Starts -->
+                            <div class="form-group">
+                                <button class="custom-button login" type="submit">Next</button>
+                            </div>
+                            <!-- Submit Form Button Ends -->
+                        </form>
+                        <!-- Form Ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Wrapper Ends -->
+    <!-- Template JS Files -->
+    <script src="~/assets/js/jquery-2.2.4.min.js"></script>
+    <script src="~/assets/js/plugins/jquery.easing.1.3.js"></script>
+    <script src="~/assets/js/plugins/bootstrap.min.js"></script>
+
+    <!-- Live Style Switcher JS File - only demo -->
+    <script src="~/assets/js/styleswitcher.js"></script>
+
+    <!-- Main JS Initialization File -->
+    <script src="~/assets/js/custom.js"></script>
+</body>
+
+
+<!-- login17:56  -->
+</html>
