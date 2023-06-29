@@ -1,0 +1,15 @@
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\bin\Debug\net6.0\Core.dll
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\bin\Debug\net6.0\Core.pdb
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\Entities.csproj.CopyComplete
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Entities\obj\Debug\net6.0\ref\Entities.dll
