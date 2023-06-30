@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework.Repositories
 {
-    public class ContactRepository : EFEntityRepositoryBase<Contact>, IContactRepository
+    public class EFContactRepository : EFEntityRepositoryBase<Contact>, IContactRepository
     {
-        public ContactRepository(DbContext context) : base(context)
+        public EFContactRepository(DbContext context) : base(context)
         {
         }
     }

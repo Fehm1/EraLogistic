@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework.Repositories
 {
-    public class ProfessionRepository : EFEntityRepositoryBase<Profession>, IProfesionRepository
+    public class EFProfessionRepository : EFEntityRepositoryBase<Profession>, IProfesionRepository
     {
-        public ProfessionRepository(DbContext context) : base(context)
+        public EFProfessionRepository(DbContext context) : base(context)
         {
         }
     }

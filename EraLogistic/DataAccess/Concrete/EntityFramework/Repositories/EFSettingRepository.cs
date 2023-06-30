@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework.Repositories
 {
-    public class SettingRepository : EFEntityRepositoryBase<Setting>, ISettingRepository
+    public class EFSettingRepository : EFEntityRepositoryBase<Setting>, ISettingRepository
     {
-        public SettingRepository(DbContext context) : base(context)
+        public EFSettingRepository(DbContext context) : base(context)
         {
         }
     }

@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework.Repositories
 {
-    public class PackageFeatureRepository : EFEntityRepositoryBase<PackageFeature>, IPackageFeatureRepository
+    public class EFPackageFeatureRepository : EFEntityRepositoryBase<PackageFeature>, IPackageFeatureRepository
     {
-        public PackageFeatureRepository(DbContext context) : base(context)
+        public EFPackageFeatureRepository(DbContext context) : base(context)
         {
         }
     }

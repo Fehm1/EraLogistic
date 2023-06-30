@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework.Repositories
 {
-    public class SliderRepository : EFEntityRepositoryBase<Slider>, ISliderRepository
+    public class EFSliderRepository : EFEntityRepositoryBase<Slider>, ISliderRepository
     {
-        public SliderRepository(DbContext context) : base(context)
+        public EFSliderRepository(DbContext context) : base(context)
         {
         }
     }
