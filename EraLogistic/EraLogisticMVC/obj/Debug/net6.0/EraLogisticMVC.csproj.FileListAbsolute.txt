@@ -50,3 +50,8 @@ C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\ob
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\EraLogisticMVC.pdb
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\EraLogisticMVC.genruntimeconfig.cache
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\ref\EraLogisticMVC.dll
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets\msbuild.EraLogisticMVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets\msbuild.build.EraLogisticMVC.props
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.EraLogisticMVC.props
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.EraLogisticMVC.props
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets.pack.json

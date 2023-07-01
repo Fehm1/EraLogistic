@@ -13,7 +13,7 @@ namespace DataAccess.Concrete.EntityFramework.Mappings
 
             builder.Property(a => a.Image).HasMaxLength(100);
             builder.Property(a => a.Image).IsRequired();
-            builder.Property(a => a.Fullname).HasMaxLength(100);
+            builder.Property(a => a.Fullname).HasMaxLength(200);
             builder.Property(a => a.Fullname).IsRequired();
             builder.Property(a => a.InstagramUrl).HasMaxLength(100);
             builder.Property(a => a.InstagramUrl).IsRequired();

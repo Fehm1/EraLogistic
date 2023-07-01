@@ -10,3 +10,8 @@ C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\obj\Debu
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\obj\Debug\net6.0\refint\Business.dll
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\obj\Debug\net6.0\Business.pdb
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\obj\Debug\net6.0\ref\Business.dll
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\bin\Debug\net6.0\Core.dll
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\bin\Debug\net6.0\Entities.dll
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\bin\Debug\net6.0\Core.pdb
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\bin\Debug\net6.0\Entities.pdb
+C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\Business\obj\Debug\net6.0\Business.csproj.CopyComplete

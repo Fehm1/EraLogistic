@@ -10,7 +10,6 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<AboutUs> AboutUs { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Package> Packages { get; set; }
-        public DbSet<PackageFeature> PackageFeatures { get; set; }
         public DbSet<Profession> Professions { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Setting> Settings { get; set; }
@@ -29,7 +28,6 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
             modelBuilder.ApplyConfiguration(new AboutUsMap());
             modelBuilder.ApplyConfiguration(new ContactMap());
             modelBuilder.ApplyConfiguration(new PackageMap());
-            modelBuilder.ApplyConfiguration(new PackageFeatureMap());
             modelBuilder.ApplyConfiguration(new ProfessionMap());
             modelBuilder.ApplyConfiguration(new ServiceMap());
             modelBuilder.ApplyConfiguration(new SettingMap());

@@ -1,0 +1,953 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EraLogisticMVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EraLogisticMVC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\jquery.bxslider.css",
+      "PackagePath": "staticwebassets\\assets\\css\\jquery.bxslider.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\blue.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\blue.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\blueviolet.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\blueviolet.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\goldenrod.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\goldenrod.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\green.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\green.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\magenta.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\magenta.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\orange.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\orange.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\purple.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\purple.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\red.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\red.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\yellow.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\yellow.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\skins\\yellowgreen.css",
+      "PackagePath": "staticwebassets\\assets\\css\\skins\\yellowgreen.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\css\\styleswitcher.css",
+      "PackagePath": "staticwebassets\\assets\\css\\styleswitcher.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular-2.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular-2.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular-3.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular-3.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.eot-.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.eot-.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.svg.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.svg.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.woff2.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.woff2.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\backgrounds\\404.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\backgrounds\\404.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\backgrounds\\503.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\backgrounds\\503.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\backgrounds\\az_subtle.png",
+      "PackagePath": "staticwebassets\\assets\\img\\backgrounds\\az_subtle.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\backgrounds\\coming-soon.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\backgrounds\\coming-soon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\banner-blog.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\banner-blog.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-small-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-small-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-small-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-small-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-small-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-small-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-thumb-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-thumb-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-thumb-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-thumb-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\blog-post-thumb-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-post-thumb-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\user1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\user1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\user2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\user2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\blog\\user3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\user3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\3docean-dark-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\3docean-dark-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\3docean-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\3docean-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\activeden-dark-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\activeden-dark-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\activeden-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\activeden-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\audiojungle-dark-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\audiojungle-dark-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\audiojungle-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\audiojungle-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\codecanyon-dark-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\codecanyon-dark-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\codecanyon-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\codecanyon-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\graphicriver-dark-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\graphicriver-dark-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\graphicriver-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\graphicriver-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\photodune-dark-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\photodune-dark-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\photodune-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\photodune-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\themeforest-dark-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\themeforest-dark-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\logos-slider\\themeforest-light-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos-slider\\themeforest-light-background.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\payment\\american-express.png",
+      "PackagePath": "staticwebassets\\assets\\img\\payment\\american-express.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\payment\\maestro.png",
+      "PackagePath": "staticwebassets\\assets\\img\\payment\\maestro.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\payment\\mastercard.png",
+      "PackagePath": "staticwebassets\\assets\\img\\payment\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\payment\\paypal.png",
+      "PackagePath": "staticwebassets\\assets\\img\\payment\\paypal.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\payment\\visa.png",
+      "PackagePath": "staticwebassets\\assets\\img\\payment\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-blue-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-blue-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-blue-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-blue-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-blueviolet-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-blueviolet-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-blueviolet-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-blueviolet-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-goldenrod-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-goldenrod-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-goldenrod-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-goldenrod-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-green-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-green-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-green-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-green-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-magenta-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-magenta-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-magenta-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-magenta-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-orange-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-orange-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-orange-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-orange-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-purple-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-purple-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-purple-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-purple-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-red-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-red-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-red-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-red-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-yellow-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-yellow-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-yellow-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-yellow-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-yellowgreen-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-yellowgreen-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\preloaders\\preloader-yellowgreen-light.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\preloaders\\preloader-yellowgreen-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projectmanager.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projectmanager.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\bx_loader.gif",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\bx_loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\controls.png",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\controls.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\icons\\external-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\icons\\external-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\icons\\gallery-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\icons\\gallery-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\icons\\video-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\icons\\video-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\icons\\zoom-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\icons\\zoom-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\project-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\project-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\video\\video-poster.png",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\video\\video-poster.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\projects\\video\\video.mp4",
+      "PackagePath": "staticwebassets\\assets\\img\\projects\\video\\video.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\carousel-classic\\carousel-classic1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\carousel-classic\\carousel-classic1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\carousel-classic\\carousel-classic2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\carousel-classic\\carousel-classic2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\carousel-classic\\carousel-classic3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\carousel-classic\\carousel-classic3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\carousel-classic\\carousel-classic4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\carousel-classic\\carousel-classic4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\content-tabs\\content-tabs1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\content-tabs\\content-tabs1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\content-tabs\\content-tabs2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\content-tabs\\content-tabs2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\content-tabs\\content-tabs3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\content-tabs\\content-tabs3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\creative-frontpage\\creative-frontpage1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\creative-frontpage\\creative-frontpage1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\creative-frontpage\\creative-frontpage2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\creative-frontpage\\creative-frontpage2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\creative-frontpage\\creative-frontpage3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\creative-frontpage\\creative-frontpage3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\creative-frontpage\\creative-frontpage4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\creative-frontpage\\creative-frontpage4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\kenburns\\kenburns1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\kenburns\\kenburns1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\kenburns\\kenburns2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\kenburns\\kenburns2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\kenburns\\kenburns3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\kenburns\\kenburns3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\product\\bg_product.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\product\\bg_product.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\product\\ihpone_dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\product\\ihpone_dark.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\product\\ipad_content.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\product\\ipad_content.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\product\\ipad_dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\product\\ipad_dark.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\product\\iphone_content.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\product\\iphone_content.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\product\\macbook_content.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\product\\macbook_content.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\product\\macbookpro.png",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\product\\macbookpro.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\rotating-words\\cover-rotating-words.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\rotating-words\\cover-rotating-words.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\scroll-effects\\scroll-effects1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\scroll-effects\\scroll-effects1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\scroll-effects\\scroll-effects2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\scroll-effects\\scroll-effects2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\scroll-effects\\scroll-effects3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\scroll-effects\\scroll-effects3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\slideshow\\slideshow1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\slideshow\\slideshow1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\slideshow\\slideshow2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\slideshow\\slideshow2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\slideshow\\slideshow3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\slideshow\\slideshow3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\static\\static.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\static\\static.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\travel\\travel1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\travel\\travel1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\travel\\travel2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\travel\\travel2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\travel\\travel3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\travel\\travel3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\video-slider\\cover-video-slider.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\video-slider\\cover-video-slider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\revolution-slider\\vimeo\\cover-vimeo.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\revolution-slider\\vimeo\\cover-vimeo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\sections\\call-to-action-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sections\\call-to-action-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\sections\\contactform-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sections\\contactform-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\sections\\facts-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sections\\facts-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\sections\\projectmanager-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sections\\projectmanager-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\sections\\testimonials-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sections\\testimonials-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\sections\\video-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sections\\video-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\blue.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\blue.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\blueviolet.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\blueviolet.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\goldenrod.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\goldenrod.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\green.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\green.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\blue.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\blue.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\blueviolet.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\blueviolet.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\goldenrod.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\goldenrod.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\green.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\green.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\blue.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\blue.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\blueviolet.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\blueviolet.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\goldenrod.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\goldenrod.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\green.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\green.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\magenta.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\magenta.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\orange.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\purple.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\purple.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\red.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\red.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\yellow.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\yellow.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\logos-dark\\yellowgreen.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\logos-dark\\yellowgreen.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\magenta.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\magenta.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\orange.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\purple.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\purple.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\red.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\red.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\yellow.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\yellow.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\logos\\yellowgreen.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\logos\\yellowgreen.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\magenta.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\magenta.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\orange.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\purple.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\purple.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\red.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\red.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\separators\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\separators\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\separators\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\separators\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\separators\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\separators\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\separators\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\separators\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\separators\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\separators\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\yellow.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\yellow.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\styleswitcher\\yellowgreen.png",
+      "PackagePath": "staticwebassets\\assets\\img\\styleswitcher\\yellowgreen.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\team\\member1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\member1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\team\\member2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\member2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\team\\member3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\member3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\team\\member4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\member4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\testimonial\\auth-page\\bg-user-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\auth-page\\bg-user-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\testimonial\\auth-page\\bg-user-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\auth-page\\bg-user-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\testimonial\\auth-page\\bg-user.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\auth-page\\bg-user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\testimonial\\client1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\client1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\testimonial\\client2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\client2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\img\\testimonial\\client3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\client3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\index-carousel-classic.html",
+      "PackagePath": "staticwebassets\\assets\\index-carousel-classic.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\modernizr.js",
+      "PackagePath": "staticwebassets\\assets\\js\\modernizr.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\jquery.bxslider.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.bxslider.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\jquery.filterizr.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.filterizr.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\jquery.plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\jquery.plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\assets\\coloredbg.html",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\assets\\coloredbg.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\assets\\gridtile.html",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\assets\\gridtile.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\assets\\gridtile_3x3.html",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\assets\\gridtile_3x3.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\assets\\gridtile_3x3_white.html",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\assets\\gridtile_3x3_white.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\assets\\gridtile_white.html",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\assets\\gridtile_white.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\assets\\loader.html",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\assets\\loader.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\css\\closedhand.html",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\css\\closedhand.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\css\\layers.css",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\css\\layers.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\css\\navigation.css",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\css\\navigation.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\css\\openhand.html",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\css\\openhand.html"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\css\\settings.css",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\css\\settings.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\fonts\\revicons\\revicons90c6.eot",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\fonts\\revicons\\revicons90c6.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\fonts\\revicons\\revicons90c6.svg",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\fonts\\revicons\\revicons90c6.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\fonts\\revicons\\revicons90c6.ttf",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\fonts\\revicons\\revicons90c6.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\fonts\\revicons\\revicons90c6.woff",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\fonts\\revicons\\revicons90c6.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.actions.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.actions.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.kenburn.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.kenburn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.layeranimation.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.layeranimation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.migration.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.migration.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.navigation.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.navigation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.parallax.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.parallax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.slideanims.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.slideanims.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.video.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\extensions\\revolution.extension.video.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\jquery.themepunch.revolution.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\jquery.themepunch.revolution.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\plugins\\revolution\\js\\jquery.themepunch.tools.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\revolution\\js\\jquery.themepunch.tools.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\assets\\js\\styleswitcher.js",
+      "PackagePath": "staticwebassets\\assets\\js\\styleswitcher.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EraLogisticMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.EraLogisticMVC.props",
+      "PackagePath": "build\\EraLogisticMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.EraLogisticMVC.props",
+      "PackagePath": "buildMultiTargeting\\EraLogisticMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.EraLogisticMVC.props",
+      "PackagePath": "buildTransitive\\EraLogisticMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

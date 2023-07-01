@@ -13,12 +13,18 @@ namespace DataAccess.Concrete.EntityFramework.Mappings
 
             builder.Property(a => a.Name).HasMaxLength(100);
             builder.Property(a => a.Name).IsRequired();
+            builder.Property(a => a.Feature1).HasMaxLength(100);
+            builder.Property(a => a.Feature2).HasMaxLength(100);
+            builder.Property(a => a.Feature3).HasMaxLength(100);
+            builder.Property(a => a.Feature4).HasMaxLength(100);
             builder.Property(a => a.Price).IsRequired();
             builder.Property(a => a.SaleCount).IsRequired();
             builder.Property(a => a.IsPopular).HasDefaultValue(false);
             builder.Property(a => a.IsPopular).IsRequired();
             builder.Property(a => a.IsMonthly).HasDefaultValue(false);
             builder.Property(a => a.IsMonthly).IsRequired();
+            builder.Property(a => a.RedirectUrl).HasMaxLength(200);
+            builder.Property(a => a.RedirectUrl).IsRequired();
 
             builder.Property(a => a.CreatedDate).IsRequired();
             builder.Property(a => a.ModifiedDate).IsRequired();

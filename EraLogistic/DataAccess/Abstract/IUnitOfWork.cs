@@ -4,7 +4,6 @@
     {
         IAboutUsRepository AboutUs { get; }
         IContactRepository Contacts { get; }
-        IPackageFeatureRepository PackageFeatures { get; }
         IPackageRepository Packages { get; }
         IProfesionRepository Professions { get; }
         IServiceRepository Services { get; }

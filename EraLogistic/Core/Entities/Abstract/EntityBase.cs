@@ -7,7 +7,7 @@
         public virtual DateTime ModifiedDate { get; set; } = DateTime.Now;
         public virtual bool IsDeleted { get; set; } = false;
         public virtual bool IsActive { get; set; } = true;
-        public virtual string CreatedByName { get; set; }
-        public virtual string ModifiedByName { get; set; }
+        public virtual string CreatedByName { get; set; } = "Admin";
+        public virtual string ModifiedByName { get; set; } = "Admin";
     }
 }

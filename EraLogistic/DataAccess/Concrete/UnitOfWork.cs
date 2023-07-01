@@ -10,7 +10,6 @@ namespace DataAccess.Concrete
         private readonly EFAboutUsRepository _efAboutUsRepository;
         private readonly EFContactRepository _efContactRepository;
         private readonly EFPackageRepository _efPackageRepository;
-        private readonly EFPackageFeatureRepository _efPackageFeatureRepository;
         private readonly EFProfessionRepository _efProfessionRepository;
         private readonly EFServiceRepository _efServiceRepository;
         private readonly EFSettingRepository _efSettingRepository;
@@ -25,8 +24,6 @@ namespace DataAccess.Concrete
         public IAboutUsRepository AboutUs => _efAboutUsRepository ?? new EFAboutUsRepository(_context);
 
         public IContactRepository Contacts => _efContactRepository ?? new EFContactRepository(_context);
-
-        public IPackageFeatureRepository PackageFeatures => _efPackageFeatureRepository ?? new EFPackageFeatureRepository(_context);
 
         public IPackageRepository Packages => _efPackageRepository ?? new EFPackageRepository(_context);
 
