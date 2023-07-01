@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zLKSA71zSONps/ZC0sbFUe0rkeyEZCcsJFCm7vMs2cBwCzbsIH/mrV4/0MZms533eHq4fr1v0kuByAo2MVGS7A==",
+  "dgSpecHash": "Im+WN9C6HUY3An/+JlzihAYf5QBpiuTLYzlO+9YHv0P/ivlfmTIqWmjamiAXkXbW5vfabRb+nRzKdImYdwsiSA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fehmin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.19\\microsoft.aspnetcore.cryptography.internal.6.0.19.nupkg.sha512",
     "C:\\Users\\Fehmin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.19\\microsoft.aspnetcore.cryptography.keyderivation.6.0.19.nupkg.sha512",
+    "C:\\Users\\Fehmin\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\Fehmin\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.19\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.19.nupkg.sha512",
     "C:\\Users\\Fehmin\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.19\\microsoft.entityframeworkcore.6.0.19.nupkg.sha512",
     "C:\\Users\\Fehmin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.19\\microsoft.entityframeworkcore.abstractions.6.0.19.nupkg.sha512",
@@ -24,6 +25,7 @@
     "C:\\Users\\Fehmin\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Fehmin\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Fehmin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\Fehmin\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
     "C:\\Users\\Fehmin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
