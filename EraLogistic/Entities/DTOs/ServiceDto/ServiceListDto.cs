@@ -1,7 +1,10 @@
-﻿namespace Entities.DTOs.ServiceDto
+﻿using Core.Entities.Abstract;
+using Entities.Concrete;
+
+namespace Entities.DTOs.ServiceDto
 {
-    public class ServiceListDto
+    public class ServiceListDto : DtoGetBase
     {
-        public List<ServiceGetDto> ServiceGetDtos {  get; set; }
+        public IList<Service> Services {  get; set; }
     }
 }

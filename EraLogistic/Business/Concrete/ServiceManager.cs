@@ -30,7 +30,7 @@ namespace Business.Concrete
 
                 await _unitOfWork.Services.AddAsync(service);
                 await _unitOfWork.SaveAsync();
-                ServiceGetDto serviceGetDto = _mapper.Map<ServiceGetDto>(service);
+                ServiceDto serviceGetDto = _mapper.Map<ServiceDto>(service);
 
                 return new Result(ResultStatus.Success, $"{servicePostDto.Title} uğurla əlavə olundu!");
             }
@@ -54,51 +54,67 @@ namespace Business.Concrete
             return new Result(ResultStatus.Error, "Xidmət tapılmadı!");
         }
 
-        public async Task<IDataResult<Service>> Get(int serviceId)
+        public async Task<IDataResult<ServiceDto>> Get(int serviceId)
         {
             var service = await _unitOfWork.Services.GetAsync(x => x.Id == serviceId);
 
             if (service != null)
             {
-                return new DataResult<Service>(ResultStatus.Success, service);
+                return new DataResult<ServiceDto>(ResultStatus.Success, new ServiceDto
+                {
+                    Service = service,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<Service>(ResultStatus.Error, "Xidmət tapılmadı!", null);
+            return new DataResult<ServiceDto>(ResultStatus.Error, "Xidmət tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Service>>> GetAll()
+        public async Task<IDataResult<ServiceListDto>> GetAll()
         {
             var services = await _unitOfWork.Services.GetAllAsync();
 
             if (services.Count >= 0)
             {
-                return new DataResult<IList<Service>>(ResultStatus.Success, services);
+                return new DataResult<ServiceListDto>(ResultStatus.Success, new ServiceListDto
+                {
+                    Services = services,
+                    ResultStatus = ResultStatus.Success
+                });
             }
 
-            return new DataResult<IList<Service>>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
+            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Service>>> GetAllByDeleted()
+        public async Task<IDataResult<ServiceListDto>> GetAllByDeleted()
         {
             var services = await _unitOfWork.Services.GetAllAsync(x => x.IsDeleted);
 
             if (services.Count >= 0)
             {
-                return new DataResult<IList<Service>>(ResultStatus.Success, services);
+                return new DataResult<ServiceListDto>(ResultStatus.Success, new ServiceListDto
+                {
+                    Services = services,
+                    ResultStatus = ResultStatus.Success
+                });
             }
 
-            return new DataResult<IList<Service>>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
+            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Service>>> GetAllByNonDeleted()
+        public async Task<IDataResult<ServiceListDto>> GetAllByNonDeleted()
         {
             var services = await _unitOfWork.Services.GetAllAsync(x => !x.IsDeleted);
 
             if (services.Count >= 0)
             {
-                return new DataResult<IList<Service>>(ResultStatus.Success, services);
+                return new DataResult<ServiceListDto>(ResultStatus.Success, new ServiceListDto
+                {
+                    Services = services,
+                    ResultStatus = ResultStatus.Success
+                });
             }
 
-            return new DataResult<IList<Service>>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
+            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
         }
 
         public async Task<IResult> HardDelete(int serviceId)

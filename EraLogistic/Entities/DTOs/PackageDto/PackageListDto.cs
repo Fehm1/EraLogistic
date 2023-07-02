@@ -1,7 +1,10 @@
-﻿namespace Entities.DTOs.PackageDto
+﻿using Core.Entities.Abstract;
+using Entities.Concrete;
+
+namespace Entities.DTOs.PackageDto
 {
-    public class PackageListDto
+    public class PackageListDto : DtoGetBase
     {
-        public List<PackageGetDto> PackageGetDtos { get; set; }
+        public IList<Package> Packages { get; set; }
     }
 }

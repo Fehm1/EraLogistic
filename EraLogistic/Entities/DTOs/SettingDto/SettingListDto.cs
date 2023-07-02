@@ -1,7 +1,10 @@
-﻿namespace Entities.DTOs.SettingDto
+﻿using Core.Entities.Abstract;
+using Entities.Concrete;
+
+namespace Entities.DTOs.SettingDto
 {
-    public class SettingListDto
+    public class SettingListDto : DtoGetBase
     {
-        public List<SettingGetDto> SettingGetDtos { get; set; }
+        public IList<Setting> Settings { get; set; }
     }
 }

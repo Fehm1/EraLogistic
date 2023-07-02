@@ -4,8 +4,6 @@ using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.ComplexTypes;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
-using Entities.Concrete;
-using Entities.DTOs.PackageDto;
 using Entities.DTOs.SettingDto;
 
 namespace Business.Concrete
@@ -20,27 +18,35 @@ namespace Business.Concrete
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
-        public async Task<IDataResult<Setting>> Get(int settingId)
+        public async Task<IDataResult<SettingDto>> Get(int settingId)
         {
             var setting = await _unitOfWork.Settings.GetAsync(x => x.Id == settingId);
 
             if (setting != null)
             {
-                return new DataResult<Setting>(ResultStatus.Success, setting);
+                return new DataResult<SettingDto>(ResultStatus.Success, new SettingDto
+                {
+                    Setting = setting,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<Setting>(ResultStatus.Error, "Parametr tapılmadı!", null);
+            return new DataResult<SettingDto>(ResultStatus.Error, "Parametr tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Setting>>> GetAll()
+        public async Task<IDataResult<SettingListDto>> GetAll()
         {
             var settings = await _unitOfWork.Settings.GetAllAsync();
 
             if (settings.Count >= 0)
             {
-                return new DataResult<IList<Setting>>(ResultStatus.Success, settings);
+                return new DataResult<SettingListDto>(ResultStatus.Success, new SettingListDto
+                {
+                    Settings = settings,
+                    ResultStatus = ResultStatus.Success
+                });
             }
 
-            return new DataResult<IList<Setting>>(ResultStatus.Error, "Parametrlər tapılmadı!", null);
+            return new DataResult<SettingListDto>(ResultStatus.Error, "Parametrlər tapılmadı!", null);
         }
 
         public async Task<IResult> Update(SettingUpdateDto settingUpdateDto)

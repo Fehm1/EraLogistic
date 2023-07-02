@@ -29,7 +29,7 @@ namespace Business.Concrete
                 await _unitOfWork.Professions.AddAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                ProfessionGetDto professionGetDto = _mapper.Map<ProfessionGetDto>(profession);
+                ProfessionDto professionGetDto = _mapper.Map<ProfessionDto>(profession);
 
                 return new Result(ResultStatus.Success, $"{professionPostDto.ProfessionName} uğurla əlavə olundu!");
             }
@@ -53,45 +53,60 @@ namespace Business.Concrete
             return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
         }
 
-        public async Task<IDataResult<Profession>> Get(int professionId)
+        public async Task<IDataResult<ProfessionDto>> Get(int professionId)
         {
             var profession = await _unitOfWork.Professions.GetAsync(x => x.Id == professionId, x => x.Teams);
 
             if (profession != null)
             {
-                return new DataResult<Profession>(ResultStatus.Success, profession);
+                return new DataResult<ProfessionDto>(ResultStatus.Success, new ProfessionDto
+                {
+                    Profession = profession,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<Profession>(ResultStatus.Error, "Vəzifə tapılmadı!",null);
+            return new DataResult<ProfessionDto>(ResultStatus.Error, "Vəzifə tapılmadı!",null);
         }
 
-        public async Task<IDataResult<IList<Profession>>> GetAll()
+        public async Task<IDataResult<ProfessionListDto>> GetAll()
         {
             var professions = await _unitOfWork.Professions.GetAllAsync(null, x => x.Teams);
             if (professions.Count >= 0)
             {
-                return new DataResult<IList<Profession>>(ResultStatus.Success, professions);
+                return new DataResult<ProfessionListDto>(ResultStatus.Success, new ProfessionListDto
+                {
+                    Professions = professions,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Profession>>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
+            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Profession>>> GetAllByDeleted()
+        public async Task<IDataResult<ProfessionListDto>> GetAllByDeleted()
         {
             var professions = await _unitOfWork.Professions.GetAllAsync(x => x.IsDeleted, x => x.Teams);
             if (professions.Count >= 0)
             {
-                return new DataResult<IList<Profession>>(ResultStatus.Success, professions);
+                return new DataResult<ProfessionListDto>(ResultStatus.Success, new ProfessionListDto
+                {
+                    Professions = professions,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Profession>>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
+            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Profession>>> GetAllByNonDeleted()
+        public async Task<IDataResult<ProfessionListDto>> GetAllByNonDeleted()
         {
             var professions = await _unitOfWork.Professions.GetAllAsync(x => !x.IsDeleted, x => x.Teams);
             if (professions.Count >= 0)
             {
-                return new DataResult<IList<Profession>>(ResultStatus.Success, professions);
+                return new DataResult<ProfessionListDto>(ResultStatus.Success, new ProfessionListDto { 
+                    Professions = professions, 
+                    ResultStatus = ResultStatus.Success 
+                });
             }
-            return new DataResult<IList<Profession>>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
+            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
         }
 
         public async Task<IResult> HardDelete(int professionId)

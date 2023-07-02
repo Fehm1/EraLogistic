@@ -52,7 +52,7 @@ namespace Business.Concrete
 
                 await _unitOfWork.Sliders.AddAsync(slider);
                 await _unitOfWork.SaveAsync();
-                SliderGetDto sliderGetDto = _mapper.Map<SliderGetDto>(slider);
+                SliderDto sliderGetDto = _mapper.Map<SliderDto>(slider);
 
                 return new Result(ResultStatus.Success, "Slayder uğurla əlavə olundu!");
             }
@@ -76,45 +76,61 @@ namespace Business.Concrete
             return new Result(ResultStatus.Error, "Slayder tapılmadı!");
         }
 
-        public async Task<IDataResult<Slider>> Get(int sliderId)
+        public async Task<IDataResult<SliderDto>> Get(int sliderId)
         {
             var slider = await _unitOfWork.Sliders.GetAsync(x => x.Id == sliderId);
 
             if (slider != null)
             {
-                return new DataResult<Slider>(ResultStatus.Success, slider);
+                return new DataResult<SliderDto>(ResultStatus.Success, new SliderDto
+                {
+                    Slider = slider,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<Slider>(ResultStatus.Error, "Slayder tapılmadı!", null);
+            return new DataResult<SliderDto>(ResultStatus.Error, "Slayder tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Slider>>> GetAll()
+        public async Task<IDataResult<SliderListDto>> GetAll()
         {
             var sliders = await _unitOfWork.Sliders.GetAllAsync();
             if (sliders.Count >= 0)
             {
-                return new DataResult<IList<Slider>>(ResultStatus.Success, sliders);
+                return new DataResult<SliderListDto>(ResultStatus.Success, new SliderListDto
+                {
+                    Sliders = sliders,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Slider>>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
+            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Slider>>> GetAllByDeleted()
+        public async Task<IDataResult<SliderListDto>> GetAllByDeleted()
         {
             var sliders = await _unitOfWork.Sliders.GetAllAsync(x => x.IsDeleted);
             if (sliders.Count >= 0)
             {
-                return new DataResult<IList<Slider>>(ResultStatus.Success, sliders);
+                return new DataResult<SliderListDto>(ResultStatus.Success, new SliderListDto
+                {
+                    Sliders = sliders,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Slider>>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
+            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Slider>>> GetAllByNonDeleted()
+        public async Task<IDataResult<SliderListDto>> GetAllByNonDeleted()
         {
             var sliders = await _unitOfWork.Sliders.GetAllAsync(x => !x.IsDeleted);
             if (sliders.Count >= 0)
             {
-                return new DataResult<IList<Slider>>(ResultStatus.Success, sliders);
+                return new DataResult<SliderListDto>(ResultStatus.Success, new SliderListDto
+                {
+                    Sliders = sliders,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Slider>>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
+            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
         }
 
         public async Task<IResult> HardDelete(int sliderId)

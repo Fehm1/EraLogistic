@@ -6,7 +6,7 @@ namespace Business.Abstract
 {
     public interface IAboutUsService
     {
-        Task<IDataResult<AboutUs>> Get(int AboutUsId);
+        Task<IDataResult<AboutUsDto>> Get(int AboutUsId);
         Task<IResult> Update(AboutUsUpdateDto aboutUsUpdateDto);
     }
 }

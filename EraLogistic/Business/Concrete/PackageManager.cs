@@ -30,7 +30,7 @@ namespace Business.Concrete
 
                 await _unitOfWork.Packages.AddAsync(package);
                 await _unitOfWork.SaveAsync();
-                PackageGetDto packageGet = _mapper.Map<PackageGetDto>(package);
+                PackageDto packageGet = _mapper.Map<PackageDto>(package);
                 return new Result(ResultStatus.Success, $"{packagePostDto.Name} paket uğurla əlavə edildi!");
             }
 
@@ -53,51 +53,67 @@ namespace Business.Concrete
             return new Result(ResultStatus.Error, "Paket tapılmadı!");
         }
 
-        public async Task<IDataResult<Package>> Get(int packageId)
+        public async Task<IDataResult<PackageDto>> Get(int packageId)
         {
             var package = await _unitOfWork.Packages.GetAsync(x => x.Id == packageId);
 
             if (package != null)
             {
-                return new DataResult<Package>(ResultStatus.Success, package);
+                return new DataResult<PackageDto>(ResultStatus.Success, new PackageDto
+                {
+                    Package = package,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<Package>(ResultStatus.Error, "Paket tapılmadı!", null);
+            return new DataResult<PackageDto>(ResultStatus.Error, "Paket tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Package>>> GetAll()
+        public async Task<IDataResult<PackageListDto>> GetAll()
         {
             var packages = await _unitOfWork.Packages.GetAllAsync();
 
             if (packages.Count >= 0)
             {
-                return new DataResult<IList<Package>>(ResultStatus.Success, packages);
+                return new DataResult<PackageListDto>(ResultStatus.Success, new PackageListDto
+                {
+                    Packages = packages,
+                    ResultStatus = ResultStatus.Success
+                });
             }
 
-            return new DataResult<IList<Package>>(ResultStatus.Error, "Paketlər tapılmadı!", null);
+            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Package>>> GetAllByDeleted()
+        public async Task<IDataResult<PackageListDto>> GetAllByDeleted()
         {
             var packages = await _unitOfWork.Packages.GetAllAsync(x => x.IsDeleted);
 
             if (packages.Count >= 0)
             {
-                return new DataResult<IList<Package>>(ResultStatus.Success, packages);
+                return new DataResult<PackageListDto>(ResultStatus.Success, new PackageListDto
+                {
+                    Packages = packages,
+                    ResultStatus = ResultStatus.Success
+                });
             }
 
-            return new DataResult<IList<Package>>(ResultStatus.Error, "Paketlər tapılmadı!", null);
+            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Package>>> GetAllByNonDeleted()
+        public async Task<IDataResult<PackageListDto>> GetAllByNonDeleted()
         {
             var packages = await _unitOfWork.Packages.GetAllAsync(x => !x.IsDeleted);
 
             if (packages.Count >= 0)
             {
-                return new DataResult<IList<Package>>(ResultStatus.Success, packages);
+                return new DataResult<PackageListDto>(ResultStatus.Success, new PackageListDto
+                {
+                    Packages = packages,
+                    ResultStatus = ResultStatus.Success
+                });
             }
 
-            return new DataResult<IList<Package>>(ResultStatus.Error, "Paketlər tapılmadı!", null);
+            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", null);
         }
 
         public async Task<IResult> HardDelete(int packageId)

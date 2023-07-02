@@ -1,7 +1,10 @@
-﻿namespace Entities.DTOs.SliderDto
+﻿using Core.Entities.Abstract;
+using Entities.Concrete;
+
+namespace Entities.DTOs.SliderDto
 {
-    public class SliderListDto
+    public class SliderListDto : DtoGetBase
     {
-        public List<SliderGetDto> SliderGetDtos { get; set; }
+        public IList<Slider> Sliders { get; set; }
     }
 }

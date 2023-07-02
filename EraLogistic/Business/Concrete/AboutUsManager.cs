@@ -5,7 +5,6 @@ using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.ComplexTypes;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
-using Entities.Concrete;
 using Entities.DTOs.AboutUsDto;
 using Microsoft.AspNetCore.Hosting;
 
@@ -26,15 +25,19 @@ namespace Business.Concrete
             _env = env;
         }
 
-        public async Task<IDataResult<AboutUs>> Get(int AboutUsId)
+        public async Task<IDataResult<AboutUsDto>> Get(int AboutUsId)
         {
             var aboutUs = await _unitOfWork.AboutUs.GetAsync(x => x.Id == AboutUsId);
 
             if (aboutUs != null)
             {
-                return new DataResult<AboutUs>(ResultStatus.Success, aboutUs);
+                return new DataResult<AboutUsDto>(ResultStatus.Success, new AboutUsDto
+                {
+                    AboutUs = aboutUs,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<AboutUs>(ResultStatus.Error, "Məlumat tapılmadı!", null);
+            return new DataResult<AboutUsDto>(ResultStatus.Error, "Məlumat tapılmadı!", null);
         }
 
         public async Task<IResult> Update(AboutUsUpdateDto aboutUsUpdateDto)

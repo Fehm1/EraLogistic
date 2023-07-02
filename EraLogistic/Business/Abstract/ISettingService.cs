@@ -6,8 +6,8 @@ namespace Business.Abstract
 {
     public interface ISettingService
     {
-        Task<IDataResult<Setting>> Get(int settingId);
-        Task<IDataResult<IList<Setting>>> GetAll();
+        Task<IDataResult<SettingDto>> Get(int settingId);
+        Task<IDataResult<SettingListDto>> GetAll();
         Task<IResult> Update(SettingUpdateDto settingUpdateDto);
     }
 }

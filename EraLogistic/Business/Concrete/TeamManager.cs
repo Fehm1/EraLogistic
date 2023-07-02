@@ -53,7 +53,7 @@ namespace Business.Concrete
 
                 await _unitOfWork.Teams.AddAsync(team);
                 await _unitOfWork.SaveAsync();
-                TeamGetDto teamGetDto = _mapper.Map<TeamGetDto>(team);
+                TeamDto teamGetDto = _mapper.Map<TeamDto>(team);
 
                 return new Result(ResultStatus.Success, "Üzv uğurla əlavə olundu!");
             }
@@ -77,45 +77,61 @@ namespace Business.Concrete
             return new Result(ResultStatus.Error, "Üzv tapılmadı!");
         }
 
-        public async Task<IDataResult<Team>> Get(int teamId)
+        public async Task<IDataResult<TeamDto>> Get(int teamId)
         {
             var team = await _unitOfWork.Teams.GetAsync(x => x.Id == teamId);
 
             if (team != null)
             {
-                return new DataResult<Team>(ResultStatus.Success, team);
+                return new DataResult<TeamDto>(ResultStatus.Success, new TeamDto
+                {
+                    Team = team,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<Team>(ResultStatus.Error, "Üzv tapılmadı!", null);
+            return new DataResult<TeamDto>(ResultStatus.Error, "Üzv tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Team>>> GetAll()
+        public async Task<IDataResult<TeamListDto>> GetAll()
         {
             var teams = await _unitOfWork.Teams.GetAllAsync();
             if (teams.Count >= 0)
             {
-                return new DataResult<IList<Team>>(ResultStatus.Success, teams);
+                return new DataResult<TeamListDto>(ResultStatus.Success, new TeamListDto
+                {
+                    Teams = teams,
+                    ResultStatus= ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Team>>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
+            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Team>>> GetAllByDeleted()
+        public async Task<IDataResult<TeamListDto>> GetAllByDeleted()
         {
             var teams = await _unitOfWork.Teams.GetAllAsync(x => x.IsDeleted);
             if (teams.Count >= 0)
             {
-                return new DataResult<IList<Team>>(ResultStatus.Success, teams);
+                return new DataResult<TeamListDto>(ResultStatus.Success, new TeamListDto
+                {
+                    Teams = teams,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Team>>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
+            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Team>>> GetAllByNonDeleted()
+        public async Task<IDataResult<TeamListDto>> GetAllByNonDeleted()
         {
             var teams = await _unitOfWork.Teams.GetAllAsync(x => !x.IsDeleted);
             if (teams.Count >= 0)
             {
-                return new DataResult<IList<Team>>(ResultStatus.Success, teams);
+                return new DataResult<TeamListDto>(ResultStatus.Success, new TeamListDto
+                {
+                    Teams = teams,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Team>>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
+            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
         }
 
         public async Task<IResult> HardDelete(int teamId)

@@ -1,7 +1,10 @@
-﻿namespace Entities.DTOs.ProfessionDto
+﻿using Core.Entities.Abstract;
+using Entities.Concrete;
+
+namespace Entities.DTOs.ProfessionDto
 {
-    public class ProfessionListDto
+    public class ProfessionListDto : DtoGetBase
     {
-        public List<ProfessionGetDto> ProfessionGetDtos { get; set;}
+        public IList<Profession> Professions { get; set;}
     }
 }

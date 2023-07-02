@@ -6,10 +6,10 @@ namespace Business.Abstract
 {
     public interface IServiceService
     {
-        Task<IDataResult<Service>> Get(int serviceId);
-        Task<IDataResult<IList<Service>>> GetAll();
-        Task<IDataResult<IList<Service>>> GetAllByNonDeleted();
-        Task<IDataResult<IList<Service>>> GetAllByDeleted();
+        Task<IDataResult<ServiceDto>> Get(int serviceId);
+        Task<IDataResult<ServiceListDto>> GetAll();
+        Task<IDataResult<ServiceListDto>> GetAllByNonDeleted();
+        Task<IDataResult<ServiceListDto>> GetAllByDeleted();
         Task<IResult> Add(ServicePostDto servicePostDto);
         Task<IResult> Update(ServiceUpdateDto serviceUpdateDto);
         Task<IResult> Restore(int serviceId);

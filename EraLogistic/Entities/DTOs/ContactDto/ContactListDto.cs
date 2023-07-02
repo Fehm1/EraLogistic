@@ -1,7 +1,10 @@
-﻿namespace Entities.DTOs.ContactDto
+﻿using Core.Entities.Abstract;
+using Entities.Concrete;
+
+namespace Entities.DTOs.ContactDto
 {
-    public class ContactListDto
+    public class ContactListDto : DtoGetBase
     {
-        public List<ContactGetDto> ContactGetDtos { get; set; }
+        public IList<Contact> Contacts { get; set; }
     }
 }

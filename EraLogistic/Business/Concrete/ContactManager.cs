@@ -29,7 +29,7 @@ namespace Business.Concrete
                 await _unitOfWork.Contacts.AddAsync(contact);
                 await _unitOfWork.SaveAsync();
 
-                ContactGetDto contactGet = _mapper.Map<ContactGetDto>(contact);
+                ContactDto contactGet = _mapper.Map<ContactDto>(contact);
 
                 return new Result(ResultStatus.Success, $"{contactPostDto.Name} {contactPostDto.Surname}, mesajınız uğurla göndərildi!");
             }
@@ -53,48 +53,64 @@ namespace Business.Concrete
             return new Result(ResultStatus.Error, "Mesaj tapılmadı!");
         }
 
-        public async Task<IDataResult<Contact>> Get(int contactId)
+        public async Task<IDataResult<ContactDto>> Get(int contactId)
         {
             var contact = await _unitOfWork.Contacts.GetAsync(x => x.Id == contactId);
 
             if (contact != null)
             {
-                return new DataResult<Contact>(ResultStatus.Success, contact);
+                return new DataResult<ContactDto>(ResultStatus.Success, new ContactDto
+                {
+                    Contact = contact,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<Contact>(ResultStatus.Error, "Mesaj tapılmadı!", null);
+            return new DataResult<ContactDto>(ResultStatus.Error, "Mesaj tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Contact>>> GetAll()
+        public async Task<IDataResult<ContactListDto>> GetAll()
         {
             var contacts = await _unitOfWork.Contacts.GetAllAsync();
 
             if (contacts.Count >= 0)
             {
-                return new DataResult<IList<Contact>>(ResultStatus.Success, contacts);
+                return new DataResult<ContactListDto>(ResultStatus.Success, new ContactListDto
+                {
+                    Contacts = contacts,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Contact>>(ResultStatus.Error, "Mesajlar tapılmadı!", null);
+            return new DataResult<ContactListDto>(ResultStatus.Error, "Mesajlar tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Contact>>> GetAllByDeleted()
+        public async Task<IDataResult<ContactListDto>> GetAllByDeleted()
         {
             var contacts = await _unitOfWork.Contacts.GetAllAsync(x => x.IsDeleted);
 
             if (contacts.Count >= 0)
             {
-                return new DataResult<IList<Contact>>(ResultStatus.Success, contacts);
+                return new DataResult<ContactListDto>(ResultStatus.Success, new ContactListDto
+                {
+                    Contacts = contacts,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Contact>>(ResultStatus.Error, "Mesajlar tapılmadı!", null);
+            return new DataResult<ContactListDto>(ResultStatus.Error, "Mesajlar tapılmadı!", null);
         }
 
-        public async Task<IDataResult<IList<Contact>>> GetAllByNonDeleted()
+        public async Task<IDataResult<ContactListDto>> GetAllByNonDeleted()
         {
             var contacts = await _unitOfWork.Contacts.GetAllAsync(x => !x.IsDeleted);
 
             if (contacts.Count >= 0)
             {
-                return new DataResult<IList<Contact>>(ResultStatus.Success, contacts);
+                return new DataResult<ContactListDto>(ResultStatus.Success, new ContactListDto
+                {
+                    Contacts = contacts,
+                    ResultStatus = ResultStatus.Success
+                });
             }
-            return new DataResult<IList<Contact>>(ResultStatus.Error, "Mesaj tapılmadı!", null);
+            return new DataResult<ContactListDto>(ResultStatus.Error, "Mesajlar tapılmadı!", null);
         }
 
         public async Task<IResult> HardDelete(int contactId)
