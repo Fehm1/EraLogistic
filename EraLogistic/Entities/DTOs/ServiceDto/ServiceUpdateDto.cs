@@ -6,7 +6,7 @@ namespace Entities.DTOs.ServiceDto
     public class ServiceUpdateDto
     {
         [Required]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [DisplayName("Ikon")]
         [Required(ErrorMessage = "{0} daxil edin!")]

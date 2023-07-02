@@ -47,10 +47,10 @@ namespace Business.Concrete
                 await _unitOfWork.Professions.UpdateAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success);
+                return new Result(ResultStatus.Success, "Vəzifə uğurla silindi!");
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar silinmədi!");
+            return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
         }
 
         public async Task<IDataResult<Profession>> Get(int professionId)
@@ -61,7 +61,7 @@ namespace Business.Concrete
             {
                 return new DataResult<Profession>(ResultStatus.Success, profession);
             }
-            return new DataResult<Profession>(ResultStatus.Error,"Bu id ilə vəzifə tapılmadı!",null);
+            return new DataResult<Profession>(ResultStatus.Error, "Vəzifə tapılmadı!",null);
         }
 
         public async Task<IDataResult<IList<Profession>>> GetAll()
@@ -103,10 +103,10 @@ namespace Business.Concrete
                 await _unitOfWork.Professions.DeleteAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success);
+                return new Result(ResultStatus.Success, "Vəzifə uğurla silindi!");
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar silinmədi!");
+            return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
         }
 
         public async Task<IResult> Restore(int professionId)
@@ -119,10 +119,10 @@ namespace Business.Concrete
                 await _unitOfWork.Professions.UpdateAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success);
+                return new Result(ResultStatus.Success, "Vəzifə uğurla geri qaytarıldı!");
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar geri qaytarılmadı!");
+            return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
         }
 
         public async Task<IResult> Update(ProfessionUpdateDto professionUpdateDto)
@@ -132,15 +132,16 @@ namespace Business.Concrete
             if (profession != null)
             {
                 profession.ProfessionName = professionUpdateDto.ProfessionName;
+                profession.IsActive = professionUpdateDto.IsActive;
                 profession.ModifiedDate = DateTime.Now;
 
                 await _unitOfWork.Professions.UpdateAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, $"{professionUpdateDto.ProfessionName} uğurla yeniləndi!");
+                return new Result(ResultStatus.Success, "Vəzifə uğurla yeniləndi!");
             }
 
-            return new Result(ResultStatus.Error, "Vəzifələr tapılmadı!");
+            return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
         }
     }
 }

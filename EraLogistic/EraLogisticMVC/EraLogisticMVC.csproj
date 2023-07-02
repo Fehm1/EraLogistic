@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\uploads\AboutUs\" />
+    <Folder Include="wwwroot\uploads\Teams\" />
+    <Folder Include="wwwroot\uploads\Sliders\" />
   </ItemGroup>
 
 </Project>

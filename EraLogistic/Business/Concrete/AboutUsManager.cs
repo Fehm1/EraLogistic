@@ -34,7 +34,7 @@ namespace Business.Concrete
             {
                 return new DataResult<AboutUs>(ResultStatus.Success, aboutUs);
             }
-            return new DataResult<AboutUs>(ResultStatus.Error, "Bu id ilə data yoxdur!", null);
+            return new DataResult<AboutUs>(ResultStatus.Error, "Məlumat tapılmadı!", null);
         }
 
         public async Task<IResult> Update(AboutUsUpdateDto aboutUsUpdateDto)
@@ -73,6 +73,7 @@ namespace Business.Concrete
                 aboutUs.Feature4 = aboutUsUpdateDto.Feature4;
                 aboutUs.Feature5 = aboutUsUpdateDto.Feature5;
                 aboutUs.Feature6 = aboutUsUpdateDto.Feature6;
+                aboutUs.IsActive = aboutUsUpdateDto.IsActive;
                 aboutUs.ModifiedDate = DateTime.Now;
 
                 await _unitOfWork.SaveAsync();
@@ -80,7 +81,7 @@ namespace Business.Concrete
                 return new Result(ResultStatus.Success, "Məlumatlar uğurla yeniləndi!");
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar yenilənmədi!");
+            return new Result(ResultStatus.Error, "Məlumatlar tapılmadı!");
         }
     }
 }

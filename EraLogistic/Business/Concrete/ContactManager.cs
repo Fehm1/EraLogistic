@@ -50,7 +50,7 @@ namespace Business.Concrete
                 return new Result(ResultStatus.Success, "Mesajınız uğurla silindi!");
             }
 
-            return new Result(ResultStatus.Error, "Mesaj silinmədi!");
+            return new Result(ResultStatus.Error, "Mesaj tapılmadı!");
         }
 
         public async Task<IDataResult<Contact>> Get(int contactId)
@@ -61,7 +61,7 @@ namespace Business.Concrete
             {
                 return new DataResult<Contact>(ResultStatus.Success, contact);
             }
-            return new DataResult<Contact>(ResultStatus.Error, "Bu id ilə mesaj tapılmadı!", null);
+            return new DataResult<Contact>(ResultStatus.Error, "Mesaj tapılmadı!", null);
         }
 
         public async Task<IDataResult<IList<Contact>>> GetAll()
@@ -72,7 +72,7 @@ namespace Business.Concrete
             {
                 return new DataResult<IList<Contact>>(ResultStatus.Success, contacts);
             }
-            return new DataResult<IList<Contact>>(ResultStatus.Error, "Bu id ilə mesajlar tapılmadı!", null);
+            return new DataResult<IList<Contact>>(ResultStatus.Error, "Mesajlar tapılmadı!", null);
         }
 
         public async Task<IDataResult<IList<Contact>>> GetAllByDeleted()
@@ -83,7 +83,7 @@ namespace Business.Concrete
             {
                 return new DataResult<IList<Contact>>(ResultStatus.Success, contacts);
             }
-            return new DataResult<IList<Contact>>(ResultStatus.Error, "Bu id ilə mesajlar tapılmadı!", null);
+            return new DataResult<IList<Contact>>(ResultStatus.Error, "Mesajlar tapılmadı!", null);
         }
 
         public async Task<IDataResult<IList<Contact>>> GetAllByNonDeleted()
@@ -94,7 +94,7 @@ namespace Business.Concrete
             {
                 return new DataResult<IList<Contact>>(ResultStatus.Success, contacts);
             }
-            return new DataResult<IList<Contact>>(ResultStatus.Error, "Bu id ilə mesajlar tapılmadı!", null);
+            return new DataResult<IList<Contact>>(ResultStatus.Error, "Mesaj tapılmadı!", null);
         }
 
         public async Task<IResult> HardDelete(int contactId)
@@ -109,7 +109,7 @@ namespace Business.Concrete
                 return new Result(ResultStatus.Success, "Mesajınız uğurla silindi!");
             }
 
-            return new Result(ResultStatus.Error, "Mesaj silinmədi!");
+            return new Result(ResultStatus.Error, "Mesaj tapılmadı!");
         }
 
         public async Task<IResult> Restore(int contactId)
@@ -122,10 +122,10 @@ namespace Business.Concrete
                 await _unitOfWork.Contacts.UpdateAsync(contact);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Mesajınız uğurla silindi!");
+                return new Result(ResultStatus.Success, "Mesajın uğurla geri qaytarıldı!");
             }
 
-            return new Result(ResultStatus.Error, "Mesaj silinmədi!");
+            return new Result(ResultStatus.Error, "Mesaj tapılmadı!");
         }
     }
 }
