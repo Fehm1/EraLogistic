@@ -80,7 +80,7 @@ namespace Business.Concrete
                 return new Result(ResultStatus.Success, "Məlumatlar uğurla yeniləndi!");
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar yenilənmədi!")ı
+            return new Result(ResultStatus.Error, "Məlumatlar yenilənmədi!");
         }
     }
 }

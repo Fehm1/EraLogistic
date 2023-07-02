@@ -19,6 +19,8 @@ namespace DataAccess.Concrete.EntityFramework.Mappings
             builder.Property(a => a.Messsage).IsRequired();
             builder.Property(a => a.Email).HasMaxLength(150);
             builder.Property(a => a.Email).IsRequired();
+            builder.Property(a => a.IsRead).HasDefaultValue(false);
+            builder.Property(a => a.IsRead).IsRequired();
 
             builder.Property(a => a.CreatedDate).IsRequired();
             builder.Property(a => a.ModifiedDate).IsRequired();
