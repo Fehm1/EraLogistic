@@ -9,10 +9,10 @@ namespace Business.Abstract
         Task<IDataResult<TeamListDto>> GetAll();
         Task<IDataResult<TeamListDto>> GetAllByNonDeleted();
         Task<IDataResult<TeamListDto>> GetAllByDeleted();
-        Task<IResult> Add(TeamPostDto teamIdPostDto);
-        Task<IResult> Update(TeamUpdateDto teamUpdateDto);
-        Task<IResult> Restore(int teamId);
-        Task<IResult> Delete(int teamId);
-        Task<IResult> HardDelete(int teamId);
+        Task<IDataResult<TeamDto>> Add(TeamPostDto teamIdPostDto);
+        Task<IDataResult<TeamDto>> Update(TeamUpdateDto teamUpdateDto);
+        Task<IDataResult<TeamDto>> Restore(int teamId);
+        Task<IDataResult<TeamDto>> Delete(int teamId);
+        Task<IDataResult<TeamDto>> HardDelete(int teamId);
     }
 }

@@ -30,7 +30,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<SettingDto>(ResultStatus.Error, "Parametr tapılmadı!", null);
+            return new DataResult<SettingDto>(ResultStatus.Error, "Parametr tapılmadı!", new SettingDto
+            {
+                Setting = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Parametr tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<SettingListDto>> GetAll()
@@ -46,10 +51,15 @@ namespace Business.Concrete
                 });
             }
 
-            return new DataResult<SettingListDto>(ResultStatus.Error, "Parametrlər tapılmadı!", null);
+            return new DataResult<SettingListDto>(ResultStatus.Error, "Parametrlər tapılmadı!", new SettingListDto
+            {
+                Settings = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Parametrlər tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Update(SettingUpdateDto settingUpdateDto)
+        public async Task<IDataResult<SettingDto>> Update(SettingUpdateDto settingUpdateDto)
         {
             var setting = await _unitOfWork.Settings.GetAsync(x => x.Id == settingUpdateDto.Id);
 
@@ -58,13 +68,23 @@ namespace Business.Concrete
                 setting.Value = settingUpdateDto.Value;
                 setting.ModifiedDate = DateTime.Now;
 
-                await _unitOfWork.Settings.UpdateAsync(setting);
+                var updatedSetting = await _unitOfWork.Settings.UpdateAsync(setting);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, $"{setting.Key} uğurla yeniləndi!");
+                return new DataResult<SettingDto>(ResultStatus.Success, $"{updatedSetting.Key} uğurla yeniləndi!", new SettingDto
+                {
+                    Setting = updatedSetting,
+                    ResultStatus= ResultStatus.Success,
+                    Message = $"{updatedSetting.Key} uğurla yeniləndi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Parametr tapılmadı!");
+            return new DataResult<SettingDto>(ResultStatus.Error, "Parametr tapılmadı!", new SettingDto
+            {
+                Setting = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Parametr tapılmadı!"
+            });
         }
     }
 }

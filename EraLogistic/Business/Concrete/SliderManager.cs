@@ -24,7 +24,7 @@ namespace Business.Concrete
             _env = env;
         }
 
-        public async Task<IResult> Add(SliderPostDto sliderPostDto)
+        public async Task<IDataResult<SliderDto>> Add(SliderPostDto sliderPostDto)
         {
             if (sliderPostDto != null)
             {
@@ -34,46 +34,81 @@ namespace Business.Concrete
                 {
                     if (!sliderPostDto.Image.IsImageContent())
                     {
-                        return new Result(ResultStatus.Error, "Şəkil formatı daxil edin!");
+                        return new DataResult<SliderDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new SliderDto
+                        {
+                            Slider = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkil formatı daxil edin!"
+                        });
                     }
 
                     if (!sliderPostDto.Image.IsValidImageLength())
                     {
-                        return new Result(ResultStatus.Error, "Şəkilin həcmi böyükdür!");
+                        return new DataResult<SliderDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new SliderDto
+                        {
+                            Slider = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkilin həcmi böyükdür!"
+                        });
                     }
 
                     string newImage = sliderPostDto.Image.SaveImage(_env.WebRootPath, "uploads/Sliders");
                 }
                 else
                 {
-                    return new Result(ResultStatus.Error, "Şəkil daxil edin!");
+                    return new DataResult<SliderDto>(ResultStatus.Error, "Şəkil daxil edin!", new SliderDto
+                    {
+                        Slider = null,
+                        ResultStatus = ResultStatus.Error,
+                        Message = "Şəkil daxil edin!"
+                    });
                 }
 
 
-                await _unitOfWork.Sliders.AddAsync(slider);
+                var addedSlider = await _unitOfWork.Sliders.AddAsync(slider);
                 await _unitOfWork.SaveAsync();
                 SliderDto sliderGetDto = _mapper.Map<SliderDto>(slider);
 
-                return new Result(ResultStatus.Success, "Slayder uğurla əlavə olundu!");
+                return new DataResult<SliderDto>(ResultStatus.Success, "Slayder uğurla əlavə olundu!", new SliderDto
+                {
+                    Slider = addedSlider,
+                    ResultStatus = ResultStatus.Success,
+                    Message = "Slayder uğurla əlavə olundu!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar əlavə olunmadı!");
+            return new DataResult<SliderDto>(ResultStatus.Error, "Məlumatlar əlavə olunmadı!", new SliderDto
+            {
+                Slider = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Məlumatlar əlavə olunmadı!"
+            });
         }
 
-        public async Task<IResult> Delete(int sliderId)
+        public async Task<IDataResult<SliderDto>> Delete(int sliderId)
         {
             var slider = await _unitOfWork.Sliders.GetAsync(x => x.Id == sliderId);
 
             if (slider != null)
             {
                 slider.IsDeleted = true;
-                await _unitOfWork.Sliders.UpdateAsync(slider);
+                var deletedSlider = await _unitOfWork.Sliders.UpdateAsync(slider);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Slayder uğurla silindi!");
+                return new DataResult<SliderDto>(ResultStatus.Success, "Slayder uğurla silindi!", new SliderDto
+                {
+                    Slider = deletedSlider,
+                    ResultStatus = ResultStatus.Success,
+                    Message = "Slayder uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Slayder tapılmadı!");
+            return new DataResult<SliderDto>(ResultStatus.Error, "Slayder tapılmadı!", new SliderDto
+            {
+                Slider = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Slayder tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<SliderDto>> Get(int sliderId)
@@ -88,7 +123,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<SliderDto>(ResultStatus.Error, "Slayder tapılmadı!", null);
+            return new DataResult<SliderDto>(ResultStatus.Error, "Slayder tapılmadı!", new SliderDto
+            {
+                Slider = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Slayder tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<SliderListDto>> GetAll()
@@ -102,7 +142,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
+            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", new SliderListDto
+            {
+                Sliders = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Slayderlər tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<SliderListDto>> GetAllByDeleted()
@@ -116,7 +161,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
+            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", new SliderListDto
+            {
+                Sliders = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Slayderlər tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<SliderListDto>> GetAllByNonDeleted()
@@ -130,41 +180,66 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", null);
+            return new DataResult<SliderListDto>(ResultStatus.Error, "Slayderlər tapılmadı!", new SliderListDto
+            {
+                Sliders = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Slayderlər tapılmadı!"
+            });
         }
 
-        public async Task<IResult> HardDelete(int sliderId)
+        public async Task<IDataResult<SliderDto>> HardDelete(int sliderId)
         {
             var slider = await _unitOfWork.Sliders.GetAsync(x => x.Id == sliderId);
 
             if (slider != null)
             {
-                await _unitOfWork.Sliders.DeleteAsync(slider);
+                var deletedSlider = await _unitOfWork.Sliders.DeleteAsync(slider);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Slayder uğurla silindi!");
+                return new DataResult<SliderDto>(ResultStatus.Success, "Slayder uğurla silindi!", new SliderDto
+                {
+                    Slider = deletedSlider,
+                    ResultStatus = ResultStatus.Success,
+                    Message = "Slayder uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Slayder tapılmadı!");
+            return new DataResult<SliderDto>(ResultStatus.Error, "Slayder tapılmadı!", new SliderDto
+            {
+                Slider = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Slayder tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Restore(int sliderId)
+        public async Task<IDataResult<SliderDto>> Restore(int sliderId)
         {
             var slider = await _unitOfWork.Sliders.GetAsync(x => x.Id == sliderId);
 
             if (slider != null)
             {
                 slider.IsDeleted = false;
-                await _unitOfWork.Sliders.UpdateAsync(slider);
+                var updatedSlider = await _unitOfWork.Sliders.UpdateAsync(slider);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Slayder uğurla geri qaytarıldı!");
+                return new DataResult<SliderDto>(ResultStatus.Success, "Slayder uğurla geri qaytarıldı!", new SliderDto
+                {
+                    Slider = updatedSlider,
+                    ResultStatus = ResultStatus.Success,
+                    Message = "Slayder uğurla geri qaytarıldı!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Slayder tapılmadı!");
+            return new DataResult<SliderDto>(ResultStatus.Error, "Slayder tapılmadı!", new SliderDto
+            {
+                Slider = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Slayder tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Update(SliderUpdateDto sliderUpdateDto)
+        public async Task<IDataResult<SliderDto>> Update(SliderUpdateDto sliderUpdateDto)
         {
             var slider = await _unitOfWork.Sliders.GetAsync(x => x.Id == sliderUpdateDto.Id);
 
@@ -174,12 +249,22 @@ namespace Business.Concrete
                 {
                     if (!sliderUpdateDto.Image.IsImageContent())
                     {
-                        return new Result(ResultStatus.Error, "Şəkil formatı daxil edin!");
+                        return new DataResult<SliderDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new SliderDto
+                        {
+                            Slider = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkil formatı daxil edin!"
+                        });
                     }
 
                     if (!sliderUpdateDto.Image.IsValidImageLength())
                     {
-                        return new Result(ResultStatus.Error, "Şəkilin həcmi böyükdür!");
+                        return new DataResult<SliderDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new SliderDto
+                        {
+                            Slider = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkilin həcmi böyükdür!"
+                        });
                     }
 
                     string newImage = sliderUpdateDto.Image.SaveImage(_env.WebRootPath, "uploads/Sliders");
@@ -194,13 +279,23 @@ namespace Business.Concrete
                 slider.IsActive = sliderUpdateDto.IsActive;
                 slider.ModifiedDate = DateTime.Now;
 
-                await _unitOfWork.Sliders.UpdateAsync(slider);
+                var updatedSlider = await _unitOfWork.Sliders.UpdateAsync(slider);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Slayder uğurla yeniləndi!");
+                return new DataResult<SliderDto>(ResultStatus.Success, "Slayder uğurla yeniləndi!", new SliderDto
+                {
+                    Slider = updatedSlider,
+                    ResultStatus = ResultStatus.Success,
+                    Message = "Slayder uğurla yeniləndi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Slayder tapılmadı!");
+            return new DataResult<SliderDto>(ResultStatus.Error, "Slayder tapılmadı!", new SliderDto
+            {
+                Slider = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Slayder tapılmadı!"
+            });
         }
     }
 }

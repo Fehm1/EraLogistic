@@ -22,35 +22,55 @@ namespace Business.Concrete
             _mapper = mapper;
         }
 
-        public async Task<IResult> Add(PackagePostDto packagePostDto)
+        public async Task<IDataResult<PackageDto>> Add(PackagePostDto packagePostDto)
         {
             if (packagePostDto != null)
             {
                 var package = _mapper.Map<Package>(packagePostDto);
 
-                await _unitOfWork.Packages.AddAsync(package);
+                var addedPackage = await _unitOfWork.Packages.AddAsync(package);
                 await _unitOfWork.SaveAsync();
                 PackageDto packageGet = _mapper.Map<PackageDto>(package);
-                return new Result(ResultStatus.Success, $"{packagePostDto.Name} paket uğurla əlavə edildi!");
+                return new DataResult<PackageDto>(ResultStatus.Success, $"{packagePostDto.Name} paket uğurla əlavə edildi!", new PackageDto
+                {
+                    Package = addedPackage,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{packagePostDto.Name} paket uğurla əlavə edildi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, $"{packagePostDto.Name} paket əlavə edilmədi!");
+            return new DataResult<PackageDto>(ResultStatus.Error, $"{packagePostDto.Name} paket əlavə edilmədi!", new PackageDto
+            {
+                Package = null,
+                ResultStatus = ResultStatus.Error,
+                Message = $"{packagePostDto.Name} paket əlavə edilmədi!"
+            });
         }
 
-        public async Task<IResult> Delete(int packageId)
+        public async Task<IDataResult<PackageDto>> Delete(int packageId)
         {
             var package = await _unitOfWork.Packages.GetAsync(x => x.Id == packageId);
 
             if (package != null)
             {
                 package.IsDeleted = true;
-                await _unitOfWork.Packages.UpdateAsync(package);
+                var deletedPackage = await _unitOfWork.Packages.UpdateAsync(package);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, $"{package.Name} paket uğurla silindi!");
+                return new DataResult<PackageDto>(ResultStatus.Success, $"{package.Name} paket uğurla silindi!", new PackageDto
+                {
+                    Package = deletedPackage,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{package.Name} paket uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Paket tapılmadı!");
+            return new DataResult<PackageDto>(ResultStatus.Error, "Paket tapılmadı!", new PackageDto
+            {
+                Package = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Paket tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<PackageDto>> Get(int packageId)
@@ -65,7 +85,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<PackageDto>(ResultStatus.Error, "Paket tapılmadı!", null);
+            return new DataResult<PackageDto>(ResultStatus.Error, "Paket tapılmadı!", new PackageDto
+            {
+                Package = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Paket tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<PackageListDto>> GetAll()
@@ -81,7 +106,12 @@ namespace Business.Concrete
                 });
             }
 
-            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", null);
+            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", new PackageListDto
+            {
+                Packages = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Paketlər tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<PackageListDto>> GetAllByDeleted()
@@ -97,7 +127,12 @@ namespace Business.Concrete
                 });
             }
 
-            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", null);
+            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", new PackageListDto
+            {
+                Packages = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Paketlər tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<PackageListDto>> GetAllByNonDeleted()
@@ -113,41 +148,66 @@ namespace Business.Concrete
                 });
             }
 
-            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", null);
+            return new DataResult<PackageListDto>(ResultStatus.Error, "Paketlər tapılmadı!", new PackageListDto
+            {
+                Packages = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Paketlər tapılmadı!"
+            });
         }
 
-        public async Task<IResult> HardDelete(int packageId)
+        public async Task<IDataResult<PackageDto>> HardDelete(int packageId)
         {
             var package = await _unitOfWork.Packages.GetAsync(x => x.Id == packageId);
 
             if (package != null)
             {
-                await _unitOfWork.Packages.DeleteAsync(package);
+                var deletedPackage = await _unitOfWork.Packages.DeleteAsync(package);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, $"{package.Name} paket uğurla silindi!");
+                return new DataResult<PackageDto>(ResultStatus.Success, $"{package.Name} paket uğurla silindi!", new PackageDto
+                {
+                    Package = deletedPackage,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{package.Name} paket uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Paket tapılmadı!");
+            return new DataResult<PackageDto>(ResultStatus.Error, "Paket tapılmadı!", new PackageDto
+            {
+                Package = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Paket tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Restore(int packageId)
+        public async Task<IDataResult<PackageDto>> Restore(int packageId)
         {
             var package = await _unitOfWork.Packages.GetAsync(x => x.Id == packageId);
 
             if (package != null)
             {
                 package.IsDeleted = false;
-                await _unitOfWork.Packages.UpdateAsync(package);
+                var updatedPackage = await _unitOfWork.Packages.UpdateAsync(package);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, $"{package.Name} paket uğurla geri qaytarıldı!");
+                return new DataResult<PackageDto>(ResultStatus.Success, $"{updatedPackage.Name} paket uğurla geri qaytarıldı!", new PackageDto
+                {
+                    Package = updatedPackage,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedPackage.Name} paket uğurla geri qaytarıldı!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Paket tapılmadı!");
+            return new DataResult<PackageDto>(ResultStatus.Error, "Paket tapılmadı!", new PackageDto
+            {
+                Package = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Paket tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Update(PackageUpdateDto packageUpdateDto)
+        public async Task<IDataResult<PackageDto>> Update(PackageUpdateDto packageUpdateDto)
         {
             var package = await _unitOfWork.Packages.GetAsync(x => x.Id == packageUpdateDto.Id);
 
@@ -164,13 +224,23 @@ namespace Business.Concrete
                 package.IsActive = packageUpdateDto.IsActive;
                 package.ModifiedDate = DateTime.Now;
 
-                await _unitOfWork.Packages.UpdateAsync(package);
+                var updatedPackage = await _unitOfWork.Packages.UpdateAsync(package);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, $"{package.Name} paket uğurla yeniləndi!");
+                return new DataResult<PackageDto>(ResultStatus.Success, $"{updatedPackage.Name} paket uğurla yeniləndi!", new PackageDto
+                {
+                    Package = updatedPackage,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedPackage.Name} paket uğurla yeniləndi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Paket tapılmadı!");
+            return new DataResult<PackageDto>(ResultStatus.Error, "Paket tapılmadı!", new PackageDto
+            {
+                Package = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Paket tapılmadı!"
+            });
         }
     }
 }

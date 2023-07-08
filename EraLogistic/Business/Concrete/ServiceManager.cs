@@ -5,8 +5,6 @@ using Core.Utilities.Results.ComplexTypes;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using Entities.DTOs.PackageDto;
-using Entities.DTOs.ProfessionDto;
 using Entities.DTOs.ServiceDto;
 
 namespace Business.Concrete
@@ -22,36 +20,56 @@ namespace Business.Concrete
             _mapper = mapper;
         }
 
-        public async Task<IResult> Add(ServicePostDto servicePostDto)
+        public async Task<IDataResult<ServiceDto>> Add(ServicePostDto servicePostDto)
         {
             if (servicePostDto != null)
             {
                 var service = _mapper.Map<Service>(servicePostDto);
 
-                await _unitOfWork.Services.AddAsync(service);
+                var addedService = await _unitOfWork.Services.AddAsync(service);
                 await _unitOfWork.SaveAsync();
                 ServiceDto serviceGetDto = _mapper.Map<ServiceDto>(service);
 
-                return new Result(ResultStatus.Success, $"{servicePostDto.Title} uğurla əlavə olundu!");
+                return new DataResult<ServiceDto>(ResultStatus.Success, $"{addedService.Title} xidməti uğurla əlavə olundu!", new ServiceDto
+                {
+                    Service = addedService,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{addedService.Title} xidməti uğurla əlavə olundu!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Xidmət əlavə olunmadı!");
+            return new DataResult<ServiceDto>(ResultStatus.Error, "Xidmət əlavə olunmadı!", new ServiceDto
+            {
+                Service = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmət tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Delete(int serviceId)
+        public async Task<IDataResult<ServiceDto>> Delete(int serviceId)
         {
             var service = await _unitOfWork.Services.GetAsync(x => x.Id == serviceId);
 
             if (service != null)
             {
                 service.IsDeleted = true;
-                await _unitOfWork.Services.UpdateAsync(service);
+                var deletedService = await _unitOfWork.Services.UpdateAsync(service);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Xidmət uğurla silindi!");
+                return new DataResult<ServiceDto>(ResultStatus.Success, $"{deletedService.Title} xidməti uğurla silindi!", new ServiceDto
+                {
+                    Service = deletedService,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{deletedService.Title} xidməti uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Xidmət tapılmadı!");
+            return new DataResult<ServiceDto>(ResultStatus.Error, "Xidmət tapılmadı!", new ServiceDto
+            {
+                Service = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmət tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<ServiceDto>> Get(int serviceId)
@@ -66,7 +84,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<ServiceDto>(ResultStatus.Error, "Xidmət tapılmadı!", null);
+            return new DataResult<ServiceDto>(ResultStatus.Error, "Xidmət tapılmadı!", new ServiceDto
+            {
+                Service = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmət tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<ServiceListDto>> GetAll()
@@ -82,7 +105,12 @@ namespace Business.Concrete
                 });
             }
 
-            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
+            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", new ServiceListDto
+            {
+                Services = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmətlər tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<ServiceListDto>> GetAllByDeleted()
@@ -98,7 +126,12 @@ namespace Business.Concrete
                 });
             }
 
-            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
+            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", new ServiceListDto
+            {
+                Services = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmətlər tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<ServiceListDto>> GetAllByNonDeleted()
@@ -114,41 +147,66 @@ namespace Business.Concrete
                 });
             }
 
-            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", null);
+            return new DataResult<ServiceListDto>(ResultStatus.Error, "Xidmətlər tapılmadı!", new ServiceListDto
+            {
+                Services = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmətlər tapılmadı!"
+            });
         }
 
-        public async Task<IResult> HardDelete(int serviceId)
+        public async Task<IDataResult<ServiceDto>> HardDelete(int serviceId)
         {
             var service = await _unitOfWork.Services.GetAsync(x => x.Id == serviceId);
 
             if (service != null)
             {
-                await _unitOfWork.Services.DeleteAsync(service);
+                var deletedService = await _unitOfWork.Services.DeleteAsync(service);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Xidmət uğurla silindi!");
+                return new DataResult<ServiceDto>(ResultStatus.Success, $"{deletedService.Title} xidməti uğurla silindi!", new ServiceDto
+                {
+                    Service = deletedService,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{deletedService.Title} xidməti uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Xidmət tapılmadı!");
+            return new DataResult<ServiceDto>(ResultStatus.Error, "Xidmət tapılmadı!", new ServiceDto
+            {
+                Service = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmət tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Restore(int serviceId)
+        public async Task<IDataResult<ServiceDto>> Restore(int serviceId)
         {
             var service = await _unitOfWork.Services.GetAsync(x => x.Id == serviceId);
 
             if (service != null)
             {
                 service.IsDeleted = false;
-                await _unitOfWork.Services.UpdateAsync(service);
+                var updatedService = await _unitOfWork.Services.UpdateAsync(service);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Xidmət uğurla geri qaytarıldı!");
+                return new DataResult<ServiceDto>(ResultStatus.Success, $"{updatedService.Title} xidməti uğurla geri qaytarıldı!", new ServiceDto
+                {
+                    Service = updatedService,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedService.Title} xidməti uğurla geri qaytarıldı!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Xidmət tapılmadı!");
+            return new DataResult<ServiceDto>(ResultStatus.Error, "Xidmət tapılmadı!", new ServiceDto
+            {
+                Service = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmət tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Update(ServiceUpdateDto serviceUpdateDto)
+        public async Task<IDataResult<ServiceDto>> Update(ServiceUpdateDto serviceUpdateDto)
         {
             var service = await _unitOfWork.Services.GetAsync(x => x.Id == serviceUpdateDto.Id);
 
@@ -160,13 +218,23 @@ namespace Business.Concrete
                 service.IsActive = serviceUpdateDto.IsActive;
                 service.ModifiedDate = DateTime.Now;
 
-                await _unitOfWork.Services.UpdateAsync(service);
+                var updatedService = await _unitOfWork.Services.UpdateAsync(service);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, $"{service.Title} xidmət uğurla yeniləndi!");
+                return new DataResult<ServiceDto>(ResultStatus.Success, $"{updatedService.Title} xidməti uğurla yeniləndi!", new ServiceDto
+                {
+                    Service = updatedService,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedService.Title} xidməti uğurla yeniləndi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Xidmət tapılmadı!");
+            return new DataResult<ServiceDto>(ResultStatus.Error, "Xidmət tapılmadı!", new ServiceDto
+            {
+                Service = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Xidmət tapılmadı!"
+            });
         }
     }
 }

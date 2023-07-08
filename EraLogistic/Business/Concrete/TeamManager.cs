@@ -25,7 +25,7 @@ namespace Business.Concrete
             _env = env;
         }
 
-        public async Task<IResult> Add(TeamPostDto teamIdPostDto)
+        public async Task<IDataResult<TeamDto>> Add(TeamPostDto teamIdPostDto)
         {
             if (teamIdPostDto != null)
             {
@@ -35,46 +35,81 @@ namespace Business.Concrete
                 {
                     if (!teamIdPostDto.Image.IsImageContent())
                     {
-                        return new Result(ResultStatus.Error, "Şəkil formatı daxil edin!");
+                        return new DataResult<TeamDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new TeamDto
+                        {
+                            Team = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkil formatı daxil edin!"
+                        });
                     }
 
                     if (!teamIdPostDto.Image.IsValidImageLength())
                     {
-                        return new Result(ResultStatus.Error, "Şəkilin həcmi böyükdür!");
+                        return new DataResult<TeamDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new TeamDto
+                        {
+                            Team = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkilin həcmi böyükdür!"
+                        });
                     }
 
                     string newImage = teamIdPostDto.Image.SaveImage(_env.WebRootPath, "uploads/Teams");
                 }
                 else
                 {
-                    return new Result(ResultStatus.Error, "Şəkil daxil edin!");
+                    return new DataResult<TeamDto>(ResultStatus.Error, "Şəkil daxil edin!", new TeamDto
+                    {
+                        Team = null,
+                        ResultStatus = ResultStatus.Error,
+                        Message = "Şəkil daxil edin!"
+                    });
                 }
 
 
-                await _unitOfWork.Teams.AddAsync(team);
+                var addedTeam = await _unitOfWork.Teams.AddAsync(team);
                 await _unitOfWork.SaveAsync();
                 TeamDto teamGetDto = _mapper.Map<TeamDto>(team);
 
-                return new Result(ResultStatus.Success, "Üzv uğurla əlavə olundu!");
+                return new DataResult<TeamDto>(ResultStatus.Success, $"{addedTeam.Fullname} üzvü uğurla əlavə olundu!", new TeamDto
+                {
+                    Team = addedTeam,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{addedTeam.Fullname} üzvü uğurla əlavə olundu!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar əlavə olunmadı!");
+            return new DataResult<TeamDto>(ResultStatus.Error, "Məlumatlar əlavə olunmadı!", new TeamDto
+            {
+                Team = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Məlumatlar əlavə olunmadı!"
+            });
         }
 
-        public async Task<IResult> Delete(int teamId)
+        public async Task<IDataResult<TeamDto>> Delete(int teamId)
         {
             var team = await _unitOfWork.Teams.GetAsync(x => x.Id == teamId);
 
             if (team != null)
             {
                 team.IsDeleted = true;
-                await _unitOfWork.Teams.UpdateAsync(team);
+                var updatedTeam = await _unitOfWork.Teams.UpdateAsync(team);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Üzv uğurla silindi!");
+                return new DataResult<TeamDto>(ResultStatus.Success, $"{updatedTeam.Fullname} üzvü uğurla silindi!", new TeamDto
+                {
+                    Team = updatedTeam,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedTeam.Fullname} üzvü uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Üzv tapılmadı!");
+            return new DataResult<TeamDto>(ResultStatus.Error, "Üzv tapılmadı!", new TeamDto
+            {
+                Team = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Üzv tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<TeamDto>> Get(int teamId)
@@ -89,7 +124,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<TeamDto>(ResultStatus.Error, "Üzv tapılmadı!", null);
+            return new DataResult<TeamDto>(ResultStatus.Error, "Üzv tapılmadı!", new TeamDto
+            {
+                Team = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Üzv tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<TeamListDto>> GetAll()
@@ -103,7 +143,12 @@ namespace Business.Concrete
                     ResultStatus= ResultStatus.Success
                 });
             }
-            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
+            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", new TeamListDto
+            {
+                Teams = null,
+                ResultStatus= ResultStatus.Error,
+                Message = "Üzvlər tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<TeamListDto>> GetAllByDeleted()
@@ -117,7 +162,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
+            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", new TeamListDto
+            {
+                Teams = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Üzvlər tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<TeamListDto>> GetAllByNonDeleted()
@@ -131,41 +181,66 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", null);
+            return new DataResult<TeamListDto>(ResultStatus.Error, "Üzvlər tapılmadı!", new TeamListDto
+            {
+                Teams = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Üzvlər tapılmadı!"
+            });
         }
 
-        public async Task<IResult> HardDelete(int teamId)
+        public async Task<IDataResult<TeamDto>> HardDelete(int teamId)
         {
             var team = await _unitOfWork.Teams.GetAsync(x => x.Id == teamId);
 
             if (team != null)
             {
-                await _unitOfWork.Teams.DeleteAsync(team);
+                var deletedTeam = await _unitOfWork.Teams.DeleteAsync(team);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Üzv uğurla silindi!");
+                return new DataResult<TeamDto>(ResultStatus.Success, $"{deletedTeam.Fullname} üzvü uğurla silindi!", new TeamDto
+                {
+                    Team = deletedTeam,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{deletedTeam.Fullname} üzvü uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Üzv tapılmadı!");
+            return new DataResult<TeamDto>(ResultStatus.Error, "Üzv tapılmadı!", new TeamDto
+            {
+                Team = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Üzv tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Restore(int teamId)
+        public async Task<IDataResult<TeamDto>> Restore(int teamId)
         {
             var team = await _unitOfWork.Teams.GetAsync(x => x.Id == teamId);
 
             if (team != null)
             {
                 team.IsDeleted = false;
-                await _unitOfWork.Teams.UpdateAsync(team);
+                var updatedTeam = await _unitOfWork.Teams.UpdateAsync(team);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Üzv uğurla geri qaytarıldı!");
+                return new DataResult<TeamDto>(ResultStatus.Success, $"{updatedTeam.Fullname} üzvü uğurla geri qaytarıldı!", new TeamDto
+                {
+                    Team = updatedTeam,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedTeam.Fullname} üzvü uğurla geri qaytarıldı!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Üzv tapılmadı!");
+            return new DataResult<TeamDto>(ResultStatus.Error, "Üzv tapılmadı!", new TeamDto
+            {
+                Team = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Üzv tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Update(TeamUpdateDto teamUpdateDto)
+        public async Task<IDataResult<TeamDto>> Update(TeamUpdateDto teamUpdateDto)
         {
             var team = await _unitOfWork.Teams.GetAsync(x => x.Id == teamUpdateDto.Id);
 
@@ -175,12 +250,22 @@ namespace Business.Concrete
                 {
                     if (!teamUpdateDto.Image.IsImageContent())
                     {
-                        return new Result(ResultStatus.Error, "Şəkil formatı daxil edin!");
+                        return new DataResult<TeamDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new TeamDto
+                        {
+                            Team = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkil formatı daxil edin!"
+                        });
                     }
 
                     if (!teamUpdateDto.Image.IsValidImageLength())
                     {
-                        return new Result(ResultStatus.Error, "Şəkilin həcmi böyükdür!");
+                        return new DataResult<TeamDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new TeamDto
+                        {
+                            Team = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkilin həcmi böyükdür!"
+                        });
                     }
 
                     string newImage = teamUpdateDto.Image.SaveImage(_env.WebRootPath, "uploads/Teams");
@@ -199,13 +284,23 @@ namespace Business.Concrete
                 team.IsActive = teamUpdateDto.IsActive;
                 team.ModifiedDate = DateTime.Now;
 
-                await _unitOfWork.Teams.UpdateAsync(team);
+                var updatedTeam = await _unitOfWork.Teams.UpdateAsync(team);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Üzv uğurla yeniləndi!");
+                return new DataResult<TeamDto>(ResultStatus.Success, $"{updatedTeam.Fullname} üzvü uğurla yeniləndi!", new TeamDto
+                {
+                    Team = updatedTeam,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedTeam.Fullname} uğurla yeniləndi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Üzv tapılmadı!");
+            return new DataResult<TeamDto>(ResultStatus.Error, "Üzv tapılmadı!", new TeamDto
+            {
+                Team = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Üzv tapılmadı!"
+            });
         }
     }
 }

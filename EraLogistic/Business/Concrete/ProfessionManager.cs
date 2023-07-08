@@ -20,37 +20,57 @@ namespace Business.Concrete
             _mapper = mapper;
         }
 
-        public async Task<IResult> Add(ProfessionPostDto professionPostDto)
+        public async Task<IDataResult<ProfessionDto>> Add(ProfessionPostDto professionPostDto)
         {
             if (professionPostDto != null)
             {
                 var profession = _mapper.Map<Profession>(professionPostDto);
 
-                await _unitOfWork.Professions.AddAsync(profession);
+                var addedProfession = await _unitOfWork.Professions.AddAsync(profession);
                 await _unitOfWork.SaveAsync();
 
                 ProfessionDto professionGetDto = _mapper.Map<ProfessionDto>(profession);
 
-                return new Result(ResultStatus.Success, $"{professionPostDto.ProfessionName} uğurla əlavə olundu!");
+                return new DataResult<ProfessionDto>(ResultStatus.Success, $"{professionPostDto.ProfessionName} uğurla əlavə olundu!", new ProfessionDto
+                {
+                    Profession = addedProfession,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{professionPostDto.ProfessionName} uğurla əlavə olundu!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar əlavə olunmadı!");
+            return new DataResult<ProfessionDto>(ResultStatus.Error, "Vəzifə əlavə olunmadı!", new ProfessionDto
+            {
+                Profession = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifə əlavə olunmadı!"
+            });
         }
 
-        public async Task<IResult> Delete(int professionId)
+        public async Task<IDataResult<ProfessionDto>> Delete(int professionId)
         {
             var profession = await _unitOfWork.Professions.GetAsync(x => x.Id ==  professionId);
 
             if (profession != null)
             {
                 profession.IsDeleted = true;
-                await _unitOfWork.Professions.UpdateAsync(profession);
+                var updatedProfession = await _unitOfWork.Professions.UpdateAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Vəzifə uğurla silindi!");
+                return new DataResult<ProfessionDto>(ResultStatus.Success, $"{updatedProfession.ProfessionName} uğurla silindi!", new ProfessionDto
+                {
+                    Profession = updatedProfession,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedProfession.ProfessionName} uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
+            return new DataResult<ProfessionDto>(ResultStatus.Error, "Vəzifə tapılmadı!", new ProfessionDto
+            {
+                Profession = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifə tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<ProfessionDto>> Get(int professionId)
@@ -65,7 +85,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<ProfessionDto>(ResultStatus.Error, "Vəzifə tapılmadı!",null);
+            return new DataResult<ProfessionDto>(ResultStatus.Error, "Vəzifə tapılmadı!", new ProfessionDto
+            {
+                Profession = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifə tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<ProfessionListDto>> GetAll()
@@ -79,7 +104,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
+            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", new ProfessionListDto
+            {
+                Professions = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifələr tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<ProfessionListDto>> GetAllByDeleted()
@@ -93,7 +123,12 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
+            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", new ProfessionListDto
+            {
+                Professions = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifələr tapılmadı!"
+            });
         }
 
         public async Task<IDataResult<ProfessionListDto>> GetAllByNonDeleted()
@@ -106,41 +141,66 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success 
                 });
             }
-            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", null);
+            return new DataResult<ProfessionListDto>(ResultStatus.Error, "Vəzifələr tapılmadı!", new ProfessionListDto
+            {
+                Professions = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifələr tapılmadı!"
+            });
         }
 
-        public async Task<IResult> HardDelete(int professionId)
+        public async Task<IDataResult<ProfessionDto>> HardDelete(int professionId)
         {
             var profession = await _unitOfWork.Professions.GetAsync(x => x.Id == professionId);
 
             if (profession != null)
             {
-                await _unitOfWork.Professions.DeleteAsync(profession);
+                var deletedProfession = await _unitOfWork.Professions.DeleteAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Vəzifə uğurla silindi!");
+                return new DataResult<ProfessionDto>(ResultStatus.Success, $"{deletedProfession.ProfessionName} vəzifəsi uğurla silindi!", new ProfessionDto
+                {
+                    Profession = deletedProfession,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{deletedProfession.ProfessionName} vəzifəsi uğurla silindi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
+            return new DataResult<ProfessionDto>(ResultStatus.Error, "Vəzifə tapılmadı!", new ProfessionDto
+            {
+                Profession = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifə tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Restore(int professionId)
+        public async Task<IDataResult<ProfessionDto>> Restore(int professionId)
         {
             var profession = await _unitOfWork.Professions.GetAsync(x => x.Id == professionId);
 
             if (profession != null)
             {
                 profession.IsDeleted = false;
-                await _unitOfWork.Professions.UpdateAsync(profession);
+                var updatedProfession = await _unitOfWork.Professions.UpdateAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Vəzifə uğurla geri qaytarıldı!");
+                return new DataResult<ProfessionDto>(ResultStatus.Success, $"{updatedProfession.ProfessionName} vəzifəsi uğurla geri qaytarıldı!", new ProfessionDto
+                {
+                    Profession = updatedProfession,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedProfession.ProfessionName} vəzifəsi uğurla geri qaytarıldı!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
+            return new DataResult<ProfessionDto>(ResultStatus.Error, "Vəzifə tapılmadı!", new ProfessionDto
+            {
+                Profession = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifə tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Update(ProfessionUpdateDto professionUpdateDto)
+        public async Task<IDataResult<ProfessionDto>> Update(ProfessionUpdateDto professionUpdateDto)
         {
             var profession = await _unitOfWork.Professions.GetAsync(x => x.Id == professionUpdateDto.Id);
 
@@ -150,13 +210,23 @@ namespace Business.Concrete
                 profession.IsActive = professionUpdateDto.IsActive;
                 profession.ModifiedDate = DateTime.Now;
 
-                await _unitOfWork.Professions.UpdateAsync(profession);
+                var updatedProfession = await _unitOfWork.Professions.UpdateAsync(profession);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Vəzifə uğurla yeniləndi!");
+                return new DataResult<ProfessionDto>(ResultStatus.Success, $"{updatedProfession.ProfessionName} vəzifəsi uğurla yeniləndi!", new ProfessionDto
+                {
+                    Profession = updatedProfession,
+                    ResultStatus = ResultStatus.Success,
+                    Message = $"{updatedProfession.ProfessionName} vəzifəsi uğurla yeniləndi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Vəzifə tapılmadı!");
+            return new DataResult<ProfessionDto>(ResultStatus.Error, "Vəzifə tapılmadı!", new ProfessionDto
+            {
+                Profession = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Vəzifə tapılmadı!"
+            });
         }
     }
 }

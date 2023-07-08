@@ -8,6 +8,6 @@ namespace Business.Abstract
     {
         Task<IDataResult<SettingDto>> Get(int settingId);
         Task<IDataResult<SettingListDto>> GetAll();
-        Task<IResult> Update(SettingUpdateDto settingUpdateDto);
+        Task<IDataResult<SettingDto>> Update(SettingUpdateDto settingUpdateDto);
     }
 }

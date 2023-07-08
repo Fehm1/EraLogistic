@@ -10,10 +10,10 @@ namespace Business.Abstract
         Task<IDataResult<PackageListDto>> GetAll();
         Task<IDataResult<PackageListDto>> GetAllByNonDeleted();
         Task<IDataResult<PackageListDto>> GetAllByDeleted();
-        Task<IResult> Add(PackagePostDto packagePostDto);
-        Task<IResult> Update(PackageUpdateDto packageUpdateDto);
-        Task<IResult> Restore(int packageId);
-        Task<IResult> Delete(int packageId);
-        Task<IResult> HardDelete(int packageId);
+        Task<IDataResult<PackageDto>> Add(PackagePostDto packagePostDto);
+        Task<IDataResult<PackageDto>> Update(PackageUpdateDto packageUpdateDto);
+        Task<IDataResult<PackageDto>> Restore(int packageId);
+        Task<IDataResult<PackageDto>> Delete(int packageId);
+        Task<IDataResult<PackageDto>> HardDelete(int packageId);
     }
 }

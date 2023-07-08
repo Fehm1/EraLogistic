@@ -20,8 +20,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Fehmin/OneDrive/İş masası/Era logistic/EraLogistic/EraLogisticMVC/Areas/Manage/Views/Profession/DeletedTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2Zlc3Npb25cRGVsZXRlZFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Era logistic/EraLogistic/EraLogisticMVC/Areas/Manage/Views/Profession/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2Zlc3Npb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fehmin/OneDrive/İş masası/Era logistic/EraLogistic/EraLogisticMVC/Areas/Manage/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Era logistic/EraLogistic/EraLogisticMVC/Areas/Manage/Views/Shared/_LayoutCssPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0Q3NzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Era logistic/EraLogistic/EraLogisticMVC/Areas/Manage/Views/Shared/_LayoutJsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0SnNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Era logistic/EraLogistic/EraLogisticMVC/Areas/Manage/Views/Shared/_LayoutSideBarNavPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0U2lkZUJhck5hdlBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Fehmin/OneDrive/İş masası/Era logistic/EraLogistic/EraLogisticMVC/Areas/Manage/Views/_ViewImports.cshtml]

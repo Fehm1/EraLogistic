@@ -5,6 +5,7 @@ using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.ComplexTypes;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
+using Entities.Concrete;
 using Entities.DTOs.AboutUsDto;
 using Microsoft.AspNetCore.Hosting;
 
@@ -37,10 +38,15 @@ namespace Business.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<AboutUsDto>(ResultStatus.Error, "Məlumat tapılmadı!", null);
+            return new DataResult<AboutUsDto>(ResultStatus.Error, "Məlumat tapılmadı!", new AboutUsDto
+            {
+                AboutUs = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Məlumatlar tapılmadı!"
+            });
         }
 
-        public async Task<IResult> Update(AboutUsUpdateDto aboutUsUpdateDto)
+        public async Task<IDataResult<AboutUsDto>> Update(AboutUsUpdateDto aboutUsUpdateDto)
         {
             var aboutUs = await _unitOfWork.AboutUs.GetAsync(x => x.Id == aboutUsUpdateDto.Id);
 
@@ -50,12 +56,22 @@ namespace Business.Concrete
                 {
                     if (!aboutUsUpdateDto.Image.IsImageContent())
                     {
-                        return new Result(ResultStatus.Error, "Şəkil formatı daxil edin!");
+                        return new DataResult<AboutUsDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new AboutUsDto
+                        {
+                            AboutUs = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkil formatı daxil edin!"
+                        });
                     }
 
                     if (!aboutUsUpdateDto.Image.IsValidImageLength())
                     {
-                        return new Result(ResultStatus.Error, "Şəkilin həcmi böyükdür!");
+                        return new DataResult<AboutUsDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new AboutUsDto
+                        {
+                            AboutUs = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkilin həcmi böyükdür!"
+                        });
                     }
 
                     string newImage = aboutUsUpdateDto.Image.SaveImage(_env.WebRootPath, "uploads/AboutUs");
@@ -79,12 +95,23 @@ namespace Business.Concrete
                 aboutUs.IsActive = aboutUsUpdateDto.IsActive;
                 aboutUs.ModifiedDate = DateTime.Now;
 
+                var updatedAboutUs = await _unitOfWork.AboutUs.UpdateAsync(aboutUs);
                 await _unitOfWork.SaveAsync();
 
-                return new Result(ResultStatus.Success, "Məlumatlar uğurla yeniləndi!");
+                return new DataResult<AboutUsDto>(ResultStatus.Success, "Məlumatlar uğurla yeniləndi!", new AboutUsDto
+                {
+                    AboutUs = updatedAboutUs,
+                    ResultStatus = ResultStatus.Error,
+                    Message = "Məlumatlar uğurla yeniləndi!"
+                });
             }
 
-            return new Result(ResultStatus.Error, "Məlumatlar tapılmadı!");
+            return new DataResult<AboutUsDto>(ResultStatus.Error, "Məlumatlar tapılmadı!", new AboutUsDto
+            {
+                AboutUs = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Məlumatlar tapılmadı!"
+            });
         }
     }
 }

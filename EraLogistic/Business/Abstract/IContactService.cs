@@ -11,9 +11,10 @@ namespace Business.Abstract
         Task<IDataResult<ContactListDto>> GetAll();
         Task<IDataResult<ContactListDto>> GetAllByNonDeleted();
         Task<IDataResult<ContactListDto>> GetAllByDeleted();
-        Task<IResult> Add(ContactPostDto contactPostDto);
-        Task<IResult> Restore(int contactId);
-        Task<IResult> Delete(int contactId);
-        Task<IResult> HardDelete(int contactId);
+        Task<IDataResult<ContactDto>> Add(ContactPostDto contactPostDto);
+        Task<IDataResult<ContactDto>> Restore(int contactId);
+        Task<IDataResult<ContactDto>> Delete(int contactId);
+        Task<IDataResult<ContactDto>> HardDelete(int contactId);
+        Task<IDataResult<ContactDto>> Read(int contactId);
     }
 }

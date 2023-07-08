@@ -10,10 +10,10 @@ namespace Business.Abstract
         Task<IDataResult<ServiceListDto>> GetAll();
         Task<IDataResult<ServiceListDto>> GetAllByNonDeleted();
         Task<IDataResult<ServiceListDto>> GetAllByDeleted();
-        Task<IResult> Add(ServicePostDto servicePostDto);
-        Task<IResult> Update(ServiceUpdateDto serviceUpdateDto);
-        Task<IResult> Restore(int serviceId);
-        Task<IResult> Delete(int serviceId);
-        Task<IResult> HardDelete(int serviceId);
+        Task<IDataResult<ServiceDto>> Add(ServicePostDto servicePostDto);
+        Task<IDataResult<ServiceDto>> Update(ServiceUpdateDto serviceUpdateDto);
+        Task<IDataResult<ServiceDto>> Restore(int serviceId);
+        Task<IDataResult<ServiceDto>> Delete(int serviceId);
+        Task<IDataResult<ServiceDto>> HardDelete(int serviceId);
     }
 }
