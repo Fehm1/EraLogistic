@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace Entities.DTOs.TeamDto
 {
@@ -12,7 +12,6 @@ namespace Entities.DTOs.TeamDto
 
         [DisplayName("Şəkil")]
         [Required(ErrorMessage = "{0} daxil edin!")]
-        [MaxLength(100, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
         public IFormFile Image { get; set; }
 
         [DisplayName("Ad, soyad")]

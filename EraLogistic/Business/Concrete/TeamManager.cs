@@ -54,6 +54,7 @@ namespace Business.Concrete
                     }
 
                     string newImage = teamIdPostDto.Image.SaveImage(_env.WebRootPath, "uploads/Teams");
+                    team.Image = newImage;
                 }
                 else
                 {
@@ -114,7 +115,7 @@ namespace Business.Concrete
 
         public async Task<IDataResult<TeamDto>> Get(int teamId)
         {
-            var team = await _unitOfWork.Teams.GetAsync(x => x.Id == teamId);
+            var team = await _unitOfWork.Teams.GetAsync(x => x.Id == teamId, x => x.Profession);
 
             if (team != null)
             {
@@ -134,7 +135,7 @@ namespace Business.Concrete
 
         public async Task<IDataResult<TeamListDto>> GetAll()
         {
-            var teams = await _unitOfWork.Teams.GetAllAsync();
+            var teams = await _unitOfWork.Teams.GetAllAsync(null, x => x.Profession);
             if (teams.Count >= 0)
             {
                 return new DataResult<TeamListDto>(ResultStatus.Success, new TeamListDto
@@ -153,7 +154,7 @@ namespace Business.Concrete
 
         public async Task<IDataResult<TeamListDto>> GetAllByDeleted()
         {
-            var teams = await _unitOfWork.Teams.GetAllAsync(x => x.IsDeleted);
+            var teams = await _unitOfWork.Teams.GetAllAsync(x => x.IsDeleted, x => x.Profession);
             if (teams.Count >= 0)
             {
                 return new DataResult<TeamListDto>(ResultStatus.Success, new TeamListDto
@@ -172,7 +173,7 @@ namespace Business.Concrete
 
         public async Task<IDataResult<TeamListDto>> GetAllByNonDeleted()
         {
-            var teams = await _unitOfWork.Teams.GetAllAsync(x => !x.IsDeleted);
+            var teams = await _unitOfWork.Teams.GetAllAsync(x => !x.IsDeleted, x => x.Profession);
             if (teams.Count >= 0)
             {
                 return new DataResult<TeamListDto>(ResultStatus.Success, new TeamListDto

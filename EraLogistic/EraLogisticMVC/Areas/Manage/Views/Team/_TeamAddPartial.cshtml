@@ -1,0 +1,88 @@
+﻿@model Entities.DTOs.TeamDto.TeamPostDto
+
+<!-- Full screen modal -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Üzv əlavə et</h5>
+            </div>
+            <div class="modal-body">
+                <form asp-action="Add" method="post" enctype="multipart/form-data" id="form-team-add">
+
+                    <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+                    <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+                    <div class="row">
+
+                        <div class="col-6" style="margin: auto; width: 50%;">
+                            <div class="">
+                                <label asp-for="Image">Şəkil:</label>
+                                <input asp-for="Image" />
+                                <span class="text-danger" asp-validation-for="Image"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Fullname">Tam ad:</label>
+                                <input class="form-control" asp-for="Fullname" />
+                                <span class="text-danger" asp-validation-for="Fullname"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="ProfessionId" class="form-label">Vəzifə: </label>
+                                <select asp-for="ProfessionId" class="form-select">
+                                    <option selected>Birini seçin</option>
+
+                                    @foreach (var profession in ViewBag.Professions)
+                                    {
+                                        <option value="@profession.Id">@profession.ProfessionName</option>
+                                    }
+
+                                </select>
+                                <span asp-validation-for="ProfessionId" style="color: red"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label asp-for="InstagramUrl">Instagram:</label>
+                                <input class="form-control" asp-for="InstagramUrl" />
+                                <span class="text-danger" asp-validation-for="InstagramUrl"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="FacebookUrl">Facebook:</label>
+                                <input class="form-control" asp-for="FacebookUrl" />
+                                <span class="text-danger" asp-validation-for="FacebookUrl"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="LinkedInUrl">LinkedIn:</label>
+                                <input class="form-control" asp-for="LinkedInUrl" />
+                                <span class="text-danger" asp-validation-for="LinkedInUrl"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="TwitterUrl">Twitter:</label>
+                                <input class="form-control" asp-for="TwitterUrl" />
+                                <span class="text-danger" asp-validation-for="TwitterUrl"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="WhatsAppUrl">WhatsApp:</label>
+                                <input class="form-control" asp-for="WhatsAppUrl" />
+                                <span class="text-danger" asp-validation-for="WhatsAppUrl"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><span><i class="bi bi-x"></i></span> Geri</button>
+                <button type="button" class="btn btn-success" id="btnSave"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+        </div>
+    </div>
+</div>

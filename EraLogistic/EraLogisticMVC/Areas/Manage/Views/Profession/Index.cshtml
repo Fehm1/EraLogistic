@@ -304,8 +304,8 @@
                                     <tr>
                                         <td>@(++count)</td>
                                         <td>${professionAddAjaxModel.ProfessionDto.Profession.ProfessionName}</td>
-                                        <td>${professionAddAjaxModel.ProfessionDto.Profession.CreatedDate}</td>
-                                        <td>${professionAddAjaxModel.ProfessionDto.Profession.ModifiedDate}</td>
+                                        <td>${convertToShortDate(professionAddAjaxModel.ProfessionDto.Profession.CreatedDate)}</td>
+                                        <td>${convertToShortDate(professionAddAjaxModel.ProfessionDto.Profession.ModifiedDate)}</td>
                                         <td>
                                         </td>
                                     </tr>`
@@ -315,6 +315,15 @@
                             newTableRowObject.fadeIn(3500);
                             toastr.success(`${professionAddAjaxModel.ProfessionDto.Message}`, 'Uğurla əlavə edildi!');
                         }
+                        else{
+                            let summaryText = "";
+                            $('#validation-summary > ul > li').each(function(){
+                                let text = $(this).text();
+                                summaryText = `*${text}\n`;
+                            });
+                            toastr.warning(summaryText);
+                        }
+
                     });
                 });
 

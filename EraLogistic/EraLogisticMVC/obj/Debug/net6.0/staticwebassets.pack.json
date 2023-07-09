@@ -989,6 +989,10 @@
       "PackagePath": "staticwebassets\\manage\\js\\sb-admin-2.min.js"
     },
     {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\manage\\js\\site.js",
+      "PackagePath": "staticwebassets\\manage\\js\\site.js"
+    },
+    {
       "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\manage\\scss\\_buttons.scss",
       "PackagePath": "staticwebassets\\manage\\scss\\_buttons.scss"
     },
@@ -8351,6 +8355,150 @@
     {
       "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\manage\\vendor\\jquery\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\manage\\vendor\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\041c0f0b-8fb6-45e5-8c46-1c94c95740afstar.png",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\041c0f0b-8fb6-45e5-8c46-1c94c95740afstar.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\0c6ce48d-0fa6-41e2-85db-6ebd5f046dfebgphoto.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\0c6ce48d-0fa6-41e2-85db-6ebd5f046dfebgphoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\0ffa7587-b757-4b81-9bec-e2877bbc81dfWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\0ffa7587-b757-4b81-9bec-e2877bbc81dfWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\136ee547-f938-4a77-a811-caced5287830WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\136ee547-f938-4a77-a811-caced5287830WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\1b46379b-c335-4053-b53c-1e5102420faaWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\1b46379b-c335-4053-b53c-1e5102420faaWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\1d663574-76ba-4290-bff3-fefc1aacdc83WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\1d663574-76ba-4290-bff3-fefc1aacdc83WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\24baee92-540e-41c5-b394-c356c22b797bWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\24baee92-540e-41c5-b394-c356c22b797bWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\2beb21ad-56a3-4f0a-bc70-ca1d9a86b2bdWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\2beb21ad-56a3-4f0a-bc70-ca1d9a86b2bdWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\3f3cfabb-0376-48ac-b44d-f6cda64d702fstar.png",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\3f3cfabb-0376-48ac-b44d-f6cda64d702fstar.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\43137b61-7773-4ab3-bdda-78898fa70f19WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\43137b61-7773-4ab3-bdda-78898fa70f19WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\5c26c4db-1676-461b-8aaa-ad262df6d33dWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\5c26c4db-1676-461b-8aaa-ad262df6d33dWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\60459adc-2cb4-47b9-95b3-fa06c36cf5c1WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\60459adc-2cb4-47b9-95b3-fa06c36cf5c1WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\66ddb1f5-567a-4dc5-bb76-fa1670502d9estar.png",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\66ddb1f5-567a-4dc5-bb76-fa1670502d9estar.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\674cd366-1ea7-4709-a7fb-4afa07735380star.png",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\674cd366-1ea7-4709-a7fb-4afa07735380star.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\6c741029-bd35-4af6-929a-ee9092bd3958WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\6c741029-bd35-4af6-929a-ee9092bd3958WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\79357cf0-bec6-4dd5-b6c3-4a8391e33640WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\79357cf0-bec6-4dd5-b6c3-4a8391e33640WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\8d13bc19-aa3d-4b54-a2c1-f1cee73750baWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\8d13bc19-aa3d-4b54-a2c1-f1cee73750baWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\99c53857-51e9-480b-8624-653d127c346bWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\99c53857-51e9-480b-8624-653d127c346bWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\99c9e7c5-ed9c-498d-9849-fcf728ca59dbbgphoto.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\99c9e7c5-ed9c-498d-9849-fcf728ca59dbbgphoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\9d0af963-8a82-4e33-9574-8ad766f4ff08WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\9d0af963-8a82-4e33-9574-8ad766f4ff08WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\9e5351d5-7502-4130-a1da-528f90c241bcbgphoto.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\9e5351d5-7502-4130-a1da-528f90c241bcbgphoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\a2568e85-016c-4f5c-b7a2-6b219d8613ccstar.png",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\a2568e85-016c-4f5c-b7a2-6b219d8613ccstar.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\b2d53560-087d-495d-b88a-2546597e2cc8WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\b2d53560-087d-495d-b88a-2546597e2cc8WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\c051de17-b55a-4a10-92c4-a6140ecefd75Space.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\c051de17-b55a-4a10-92c4-a6140ecefd75Space.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\c9fc4b0f-f04c-462c-b91d-7741c85b3808WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\c9fc4b0f-f04c-462c-b91d-7741c85b3808WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\ced9470f-b914-4f7d-9f86-16efb2dc0a21Space.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\ced9470f-b914-4f7d-9f86-16efb2dc0a21Space.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\d0ef1a89-0160-449a-984d-729f304eb2cebgphoto.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\d0ef1a89-0160-449a-984d-729f304eb2cebgphoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\d27f4934-3a8a-486e-84f4-a3fa63aa5415WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\d27f4934-3a8a-486e-84f4-a3fa63aa5415WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\d683b8c3-eca9-425c-97bc-d26018c1ee2aWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\d683b8c3-eca9-425c-97bc-d26018c1ee2aWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\dc86c2ce-7afa-43e2-887f-baeaca07358ebgphoto.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\dc86c2ce-7afa-43e2-887f-baeaca07358ebgphoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\e08da5e6-449b-4d70-b986-333fa52fa59dWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\e08da5e6-449b-4d70-b986-333fa52fa59dWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\e71dd315-68ff-4322-9534-880a104d87a3bgphoto.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\e71dd315-68ff-4322-9534-880a104d87a3bgphoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\e7cdf6cb-3558-41bd-a2ba-9ba0594dab53WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\e7cdf6cb-3558-41bd-a2ba-9ba0594dab53WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\e84cd823-1b59-43e5-b653-fcf1e069c3f4WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\e84cd823-1b59-43e5-b653-fcf1e069c3f4WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\f53fb6ec-eb5d-45ca-b369-389ddd0f548ebgphoto.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\f53fb6ec-eb5d-45ca-b369-389ddd0f548ebgphoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Era logistic\\EraLogistic\\EraLogisticMVC\\wwwroot\\uploads\\Teams\\f6e4d1c5-acab-4586-9825-3cf277e07116star.png",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\f6e4d1c5-acab-4586-9825-3cf277e07116star.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EraLogisticMVC.Microsoft.AspNetCore.StaticWebAssets.props",

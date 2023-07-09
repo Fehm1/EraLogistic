@@ -1,12 +1,11 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Extentions;
 using Core.Utilities.Results.ComplexTypes;
 using Entities.DTOs.ProfessionDto;
 using EraLogisticMVC.Areas.Manage.Model;
 using Microsoft.AspNetCore.Mvc;
-using Core.Utilities.Extentions;
 using System.Text.Json;
-using Microsoft.AspNetCore.Mvc.Razor;
-using Core.Utilities.Results.Concrete;
+using System.Text.Json.Serialization;
 
 namespace EraLogisticMVC.Areas.Manage.Controllers
 {
@@ -65,6 +64,16 @@ namespace EraLogisticMVC.Areas.Manage.Controllers
 
             return Json(professionAddAjaxErrorModel);
 
+        }
+
+        public async Task<JsonResult> GetAllProfessions()
+        {
+            var result = await _professionService.GetAll();
+            var professions = JsonSerializer.Serialize(result.Data, new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve
+            });
+            return Json(professions);
         }
     }
 }
