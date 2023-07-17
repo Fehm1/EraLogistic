@@ -1,8 +1,6 @@
 ﻿using Business.Abstract;
-using Core.Utilities.Extentions;
 using Core.Utilities.Results.ComplexTypes;
 using Entities.DTOs.ProfessionDto;
-using EraLogisticMVC.Areas.Manage.Model;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -36,7 +34,7 @@ namespace EraLogisticMVC.Areas.Manage.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            return PartialView("_ProfessionAddPartial");
+            return View();
         }
 
         [HttpPost]
@@ -45,35 +43,80 @@ namespace EraLogisticMVC.Areas.Manage.Controllers
             if (ModelState.IsValid)
             {
                 var result = await _professionService.Add(professionPostDto);
-
                 if (result.ResultStatus == ResultStatus.Success)
                 {
-                    var professionAddAjaxModel = JsonSerializer.Serialize(new ProfessionAddAjaxViewModel
-                    {
-                        ProfessionDto = result.Data,
-                        ProfessionAddPartial = await this.RenderViewToStringAsync("_ProfessionAddPartial", professionPostDto)
-                    });
-
-                    return Json(professionAddAjaxModel);
+                    ViewBag.Message = result.Message;
+                    return RedirectToAction("index");
                 }
             }
-            var professionAddAjaxErrorModel = JsonSerializer.Serialize(new ProfessionAddAjaxViewModel
-            {
-                ProfessionAddPartial = await this.RenderViewToStringAsync("_ProfessionAddPartial", professionPostDto)
-            });
 
-            return Json(professionAddAjaxErrorModel);
-
+            return View(professionPostDto);
         }
 
-        public async Task<JsonResult> GetAllProfessions()
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
         {
-            var result = await _professionService.GetAll();
-            var professions = JsonSerializer.Serialize(result.Data, new JsonSerializerOptions
+            var result = await _professionService.GetUpdateDto(id);
+            if (result.ResultStatus == ResultStatus.Success)
             {
-                ReferenceHandler = ReferenceHandler.Preserve
-            });
-            return Json(professions);
+                return View(result.Data);
+            }
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(ProfessionUpdateDto professionUpdateDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _professionService.Update(professionUpdateDto);
+                if (result.ResultStatus == ResultStatus.Success)
+                {
+                    return RedirectToAction("index");
+                }
+            }
+
+            return View(professionUpdateDto);
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _professionService.Delete(id);
+            if (result.ResultStatus == ResultStatus.Success)
+            {
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        public async Task<IActionResult> HardDelete(int id)
+        {
+            var result = await _professionService.HardDelete(id);
+            if (result.ResultStatus == ResultStatus.Success)
+            {
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        public async Task<IActionResult> Restore(int id)
+        {
+            var result = await _professionService.Restore(id);
+            if (result.ResultStatus == ResultStatus.Success)
+            {
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
         }
     }
 }

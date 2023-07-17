@@ -7,6 +7,7 @@ using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs.AboutUsDto;
+using Entities.DTOs.TeamDto;
 using Microsoft.AspNetCore.Hosting;
 
 
@@ -46,15 +47,30 @@ namespace Business.Concrete
             });
         }
 
+        public async Task<IDataResult<AboutUsUpdateDto>> GetUpdateDto(int AboutUsId)
+        {
+            var result = await _unitOfWork.AboutUs.AnyAsync(c => c.Id == AboutUsId);
+            if (result)
+            {
+                var aboutUs = await _unitOfWork.AboutUs.GetAsync(c => c.Id == AboutUsId);
+                var aboutUsUpdateDto = _mapper.Map<AboutUsUpdateDto>(aboutUs);
+                return new DataResult<AboutUsUpdateDto>(ResultStatus.Success, aboutUsUpdateDto);
+            }
+            else
+            {
+                return new DataResult<AboutUsUpdateDto>(ResultStatus.Error, "Nəticə tapılmadı!", null);
+            }
+        }
+
         public async Task<IDataResult<AboutUsDto>> Update(AboutUsUpdateDto aboutUsUpdateDto)
         {
             var aboutUs = await _unitOfWork.AboutUs.GetAsync(x => x.Id == aboutUsUpdateDto.Id);
 
             if (aboutUs != null)
             {
-                if (aboutUsUpdateDto.Image != null)
+                if (aboutUsUpdateDto.ImageFile != null)
                 {
-                    if (!aboutUsUpdateDto.Image.IsImageContent())
+                    if (!aboutUsUpdateDto.ImageFile.IsImageContent())
                     {
                         return new DataResult<AboutUsDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new AboutUsDto
                         {
@@ -64,7 +80,7 @@ namespace Business.Concrete
                         });
                     }
 
-                    if (!aboutUsUpdateDto.Image.IsValidImageLength())
+                    if (!aboutUsUpdateDto.ImageFile.IsValidImageLength())
                     {
                         return new DataResult<AboutUsDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new AboutUsDto
                         {
@@ -74,7 +90,7 @@ namespace Business.Concrete
                         });
                     }
 
-                    string newImage = aboutUsUpdateDto.Image.SaveImage(_env.WebRootPath, "uploads/AboutUs");
+                    string newImage = aboutUsUpdateDto.ImageFile.SaveImage(_env.WebRootPath, "uploads/AboutUs");
                     aboutUs.Image.DeleteImage(_env.WebRootPath, "uploads/AboutUs");
 
                     aboutUs.Image = newImage;

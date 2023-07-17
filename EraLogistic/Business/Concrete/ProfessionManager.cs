@@ -149,6 +149,21 @@ namespace Business.Concrete
             });
         }
 
+        public async Task<IDataResult<ProfessionUpdateDto>> GetUpdateDto(int professionId)
+        {
+            var result = await _unitOfWork.Professions.AnyAsync(c => c.Id == professionId);
+            if (result)
+            {
+                var profession = await _unitOfWork.Professions.GetAsync(c => c.Id == professionId);
+                var professionUpdateDto = _mapper.Map<ProfessionUpdateDto>(profession);
+                return new DataResult<ProfessionUpdateDto>(ResultStatus.Success, professionUpdateDto);
+            }
+            else
+            {
+                return new DataResult<ProfessionUpdateDto>(ResultStatus.Error, "Vəzifə tapılmadı!", null);
+            }
+        }
+
         public async Task<IDataResult<ProfessionDto>> HardDelete(int professionId)
         {
             var profession = await _unitOfWork.Professions.GetAsync(x => x.Id == professionId);

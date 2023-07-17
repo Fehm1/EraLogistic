@@ -2,7 +2,7 @@
 @model Entities.DTOs.ProfessionDto.ProfessionListDto
 @{
     Layout = "_Layout";
-    ViewBag.Title = "Vəzifələr";
+    ViewBag.Title = "Silinən vəzifələr";
     int count = 0;
 }
 
@@ -12,7 +12,7 @@
         <div class="card-header py-3">
 
             <div class="row align-items-center">
-                <h3>Vəzifələr</h3>
+                <h3>Silinən vəzifələr</h3>
             </div>
 
         </div>
@@ -24,7 +24,7 @@
                             <th>No</th>
                             <th>Vəzifələr</th>
                             <th>Yaranma tarixi</th>
-                            <th>Yeniləmmə tarixi</th>
+                            <th>Yenilənmə tarixi</th>
                             <th>Əməliyyatlar</th>
                         </tr>
                     </thead>
@@ -33,11 +33,13 @@
                         @foreach (var profession in Model.Professions)
                         {
                             <tr>
-                                <td>@(++count)</td>
+                                <th scope="row">@(++count)</th>
                                 <td>@profession.ProfessionName</td>
                                 <td>@profession.CreatedDate.ToShortDateString()</td>
                                 <td>@profession.ModifiedDate.ToShortDateString()</td>
-                                <td>
+                                <td style="text-align:center">
+                                    <a class="btn btn-warning restoreButton" asp-area="Manage" asp-controller="profession" asp-action="restore" asp-route-id="@profession.Id"><i class="bi bi-arrow-counterclockwise"></i></a>
+                                    <a class="btn btn-danger deleteButton" asp-area="Manage" asp-controller="profession" asp-action="HardDelete" asp-route-id="@profession.Id"><i class="bi bi-trash-fill"></i></a>
                                 </td>
                             </tr>
                         }
@@ -62,14 +64,17 @@
                         text: 'Yenilə  <i class="bi bi-arrow-counterclockwise"></i>',
                         className: 'btn btn-warning',
                         action: function (e, dt, node, config) {
-                            alert('yenile activated');
+                            window.location.reload(true);
                         }
                     },
                     {
                         text: 'Geri  <i class="bi bi-arrow-left-circle-fill"></i>',
                         className: 'btn btn-danger',
+                        attr: {
+                            id: "btnProfessionBack",
+                        },
                         action: function (e, dt, node, config) {
-                            alert('silinen activated');
+                            
                         }
                     }
                 ],
@@ -255,6 +260,12 @@
                     "searchPlaceholder": "Nəyi axtarırsınız?"
                 }
             });
+
+            //Go index page
+            $('#btnProfessionBack').click(function () {
+                window.location.assign('/Manage/Profession/Index');
+            });
+
         });
     </script>
 }

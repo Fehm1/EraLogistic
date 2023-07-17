@@ -10,7 +10,10 @@ namespace Entities.DTOs.AboutUsDto
         public int Id { get; set; }
 
         [DisplayName("Şəkil")]
-        public IFormFile Image { get; set; }
+        public IFormFile? ImageFile { get; set; }
+
+        [DisplayName("Şəkil sətri")]
+        public string Image { get; set; }
 
         [DisplayName("Başlıq")]
         [Required(ErrorMessage = "{0} daxil edin!")]

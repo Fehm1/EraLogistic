@@ -1,0 +1,98 @@
+﻿@model Entities.DTOs.TeamDto.TeamPostDto
+@{
+    ViewBag.Title = "Üzv əlavə et";
+    var professions = ViewBag.Professions;
+}
+
+<div class="container">
+    <div>
+        <h1>Üzv əlavə et:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form asp-action="Add" id="form-team-add" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <div>
+
+                <div class="form-group col-lg-6">
+                    <img style="max-height: 200px; max-width: 200px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png" />
+                    <input style="display: block; margin-left: auto; margin-right: auto;" asp-for="Image" />
+                    <span class="text-danger" asp-validation-for="Image"></span>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="Fullname">Tam ad:</label>
+                            <input class="form-control" asp-for="Fullname" />
+                            <span class="text-danger" asp-validation-for="Fullname"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-7">
+                        <div class="form-group">
+                            <label asp-for="ProfessionId" class="form-label">Vəzifə: </label>
+                            <select asp-for="ProfessionId" class="form-select" style="display: block">
+                                <option selected>Birini seçin</option>
+
+                                @foreach (var profession in professions.Professions)
+                                {
+                                    <option value="@profession.Id">@profession.ProfessionName</option>
+                                }
+
+                            </select>
+                            <span asp-validation-for="ProfessionId" style="color: red"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="input-group my-4 ">
+                            <span class="input-group-text" id="instagram"><i class="bi bi-instagram"></i></span>
+                            <input class="form-control" aria-describedby="instagram" asp-for="InstagramUrl" />
+                        </div>
+                        <span class="text-danger" asp-validation-for="InstagramUrl"></span>
+
+                        <div class="input-group my-4">
+                            <span class="input-group-text" id="facebook"><i class="bi bi-facebook"></i></span>
+                            <input class="form-control" aria-describedby="facebook" asp-for="FacebookUrl" />
+                        </div>
+                        <span class="text-danger" asp-validation-for="FacebookUrl"></span>
+
+                        <div class="input-group my-4">
+                            <span class="input-group-text" id="linkedin"><i class="bi bi-linkedin"></i></span>
+                            <input class="form-control" aria-describedby="linkedin" asp-for="LinkedInUrl" />
+                        </div>
+                        <span class="text-danger" asp-validation-for="LinkedInUrl"></span>
+
+                        <div class="input-group my-4">
+                            <span class="input-group-text" id="twitter"><i class="bi bi-twitter"></i></span>
+                            <input class="form-control" aria-describedby="twitter" asp-for="TwitterUrl" />
+                        </div>
+                        <span class="text-danger" asp-validation-for="TwitterUrl"></span>
+
+                        <div class="input-group my-4">
+                            <span class="input-group-text" id="whatsapp"><i class="bi bi-whatsapp"></i></span>
+                            <input class="form-control" aria-describedby="whatsapp" asp-for="WhatsAppUrl" />
+                        </div>
+                        <span class="text-danger" asp-validation-for="WhatsAppUrl"></span>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <a asp-controller="team" asp-action="index" class="btn btn-outline-danger"><span><i class="bi bi-x"></i></span> Geri</a>
+                <button type="submit" class="btn btn-success"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+
+        </form>
+    </div>
+</div>

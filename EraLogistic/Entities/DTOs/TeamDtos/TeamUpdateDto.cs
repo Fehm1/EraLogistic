@@ -14,7 +14,10 @@ namespace Entities.DTOs.TeamDto
         public int ProfessionId { get; set; }
 
         [DisplayName("Şəkil")]
-        public IFormFile Image { get; set; }
+        public IFormFile? ImageFile { get; set; }
+
+        [DisplayName("Şəkil sətri")]
+        public string Image { get; set; }
 
         [DisplayName("Ad, soyad")]
         [Required(ErrorMessage = "{0} daxil edin!")]

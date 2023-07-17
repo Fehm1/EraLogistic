@@ -3088,22 +3088,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\testimonial\client3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\index-carousel-classic.html))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>assets/index-carousel-classic.html</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\index-carousel-classic.html))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\js\custom.js))">
       <SourceType>Package</SourceType>
       <SourceId>EraLogisticMVC</SourceId>
@@ -3919,6 +3903,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\manage\js\demo\datatables-demo.js))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\manage\js\Main.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>EraLogisticMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EraLogisticMVC</BasePath>
+      <RelativePath>manage/js/Main.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\manage\js\Main.js))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\manage\js\sb-admin-2.js))">
       <SourceType>Package</SourceType>
@@ -33424,12 +33424,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\manage\vendor\jquery\jquery.slim.min.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\041c0f0b-8fb6-45e5-8c46-1c94c95740afstar.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\AboutUs\3c6a3771-32ae-4ac8-891b-a07c25e6342dabout.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>EraLogisticMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/041c0f0b-8fb6-45e5-8c46-1c94c95740afstar.png</RelativePath>
+      <RelativePath>uploads/AboutUs/3c6a3771-32ae-4ac8-891b-a07c25e6342dabout.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -33438,14 +33438,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\041c0f0b-8fb6-45e5-8c46-1c94c95740afstar.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\AboutUs\3c6a3771-32ae-4ac8-891b-a07c25e6342dabout.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\0c6ce48d-0fa6-41e2-85db-6ebd5f046dfebgphoto.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Setting\91bce611-9104-459c-9261-099192ea2554EmaLogisticLogo.png))">
       <SourceType>Package</SourceType>
       <SourceId>EraLogisticMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/0c6ce48d-0fa6-41e2-85db-6ebd5f046dfebgphoto.jpg</RelativePath>
+      <RelativePath>uploads/Setting/91bce611-9104-459c-9261-099192ea2554EmaLogisticLogo.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -33454,14 +33454,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\0c6ce48d-0fa6-41e2-85db-6ebd5f046dfebgphoto.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Setting\91bce611-9104-459c-9261-099192ea2554EmaLogisticLogo.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\0ffa7587-b757-4b81-9bec-e2877bbc81dfWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Setting\cee0c232-3c8b-423c-a30b-ad55d37f7909EmaLogisticLogo.png))">
       <SourceType>Package</SourceType>
       <SourceId>EraLogisticMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/0ffa7587-b757-4b81-9bec-e2877bbc81dfWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
+      <RelativePath>uploads/Setting/cee0c232-3c8b-423c-a30b-ad55d37f7909EmaLogisticLogo.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -33470,14 +33470,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\0ffa7587-b757-4b81-9bec-e2877bbc81dfWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Setting\cee0c232-3c8b-423c-a30b-ad55d37f7909EmaLogisticLogo.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\136ee547-f938-4a77-a811-caced5287830WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e2e130df-f6a2-420a-9965-11237f81e49dbgphoto.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>EraLogisticMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/136ee547-f938-4a77-a811-caced5287830WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
+      <RelativePath>uploads/Teams/e2e130df-f6a2-420a-9965-11237f81e49dbgphoto.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -33486,14 +33486,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\136ee547-f938-4a77-a811-caced5287830WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e2e130df-f6a2-420a-9965-11237f81e49dbgphoto.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\1b46379b-c335-4053-b53c-1e5102420faaWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e9c6c31a-8af7-4067-93bb-ecdf4a4a4e57Space.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>EraLogisticMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/1b46379b-c335-4053-b53c-1e5102420faaWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
+      <RelativePath>uploads/Teams/e9c6c31a-8af7-4067-93bb-ecdf4a4a4e57Space.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -33502,14 +33502,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\1b46379b-c335-4053-b53c-1e5102420faaWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e9c6c31a-8af7-4067-93bb-ecdf4a4a4e57Space.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\1d663574-76ba-4290-bff3-fefc1aacdc83WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\f3780f24-8532-49fc-9db5-7afd33b5a23dWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>EraLogisticMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/1d663574-76ba-4290-bff3-fefc1aacdc83WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
+      <RelativePath>uploads/Teams/f3780f24-8532-49fc-9db5-7afd33b5a23dWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -33518,487 +33518,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\1d663574-76ba-4290-bff3-fefc1aacdc83WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\24baee92-540e-41c5-b394-c356c22b797bWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/24baee92-540e-41c5-b394-c356c22b797bWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\24baee92-540e-41c5-b394-c356c22b797bWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\2beb21ad-56a3-4f0a-bc70-ca1d9a86b2bdWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/2beb21ad-56a3-4f0a-bc70-ca1d9a86b2bdWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\2beb21ad-56a3-4f0a-bc70-ca1d9a86b2bdWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\3f3cfabb-0376-48ac-b44d-f6cda64d702fstar.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/3f3cfabb-0376-48ac-b44d-f6cda64d702fstar.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\3f3cfabb-0376-48ac-b44d-f6cda64d702fstar.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\43137b61-7773-4ab3-bdda-78898fa70f19WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/43137b61-7773-4ab3-bdda-78898fa70f19WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\43137b61-7773-4ab3-bdda-78898fa70f19WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\5c26c4db-1676-461b-8aaa-ad262df6d33dWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/5c26c4db-1676-461b-8aaa-ad262df6d33dWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\5c26c4db-1676-461b-8aaa-ad262df6d33dWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\60459adc-2cb4-47b9-95b3-fa06c36cf5c1WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/60459adc-2cb4-47b9-95b3-fa06c36cf5c1WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\60459adc-2cb4-47b9-95b3-fa06c36cf5c1WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\66ddb1f5-567a-4dc5-bb76-fa1670502d9estar.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/66ddb1f5-567a-4dc5-bb76-fa1670502d9estar.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\66ddb1f5-567a-4dc5-bb76-fa1670502d9estar.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\674cd366-1ea7-4709-a7fb-4afa07735380star.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/674cd366-1ea7-4709-a7fb-4afa07735380star.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\674cd366-1ea7-4709-a7fb-4afa07735380star.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\6c741029-bd35-4af6-929a-ee9092bd3958WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/6c741029-bd35-4af6-929a-ee9092bd3958WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\6c741029-bd35-4af6-929a-ee9092bd3958WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\79357cf0-bec6-4dd5-b6c3-4a8391e33640WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/79357cf0-bec6-4dd5-b6c3-4a8391e33640WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\79357cf0-bec6-4dd5-b6c3-4a8391e33640WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\8d13bc19-aa3d-4b54-a2c1-f1cee73750baWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/8d13bc19-aa3d-4b54-a2c1-f1cee73750baWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\8d13bc19-aa3d-4b54-a2c1-f1cee73750baWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\99c53857-51e9-480b-8624-653d127c346bWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/99c53857-51e9-480b-8624-653d127c346bWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\99c53857-51e9-480b-8624-653d127c346bWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\99c9e7c5-ed9c-498d-9849-fcf728ca59dbbgphoto.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/99c9e7c5-ed9c-498d-9849-fcf728ca59dbbgphoto.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\99c9e7c5-ed9c-498d-9849-fcf728ca59dbbgphoto.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\9d0af963-8a82-4e33-9574-8ad766f4ff08WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/9d0af963-8a82-4e33-9574-8ad766f4ff08WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\9d0af963-8a82-4e33-9574-8ad766f4ff08WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\9e5351d5-7502-4130-a1da-528f90c241bcbgphoto.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/9e5351d5-7502-4130-a1da-528f90c241bcbgphoto.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\9e5351d5-7502-4130-a1da-528f90c241bcbgphoto.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\a2568e85-016c-4f5c-b7a2-6b219d8613ccstar.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/a2568e85-016c-4f5c-b7a2-6b219d8613ccstar.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\a2568e85-016c-4f5c-b7a2-6b219d8613ccstar.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\b2d53560-087d-495d-b88a-2546597e2cc8WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/b2d53560-087d-495d-b88a-2546597e2cc8WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\b2d53560-087d-495d-b88a-2546597e2cc8WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\c051de17-b55a-4a10-92c4-a6140ecefd75Space.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/c051de17-b55a-4a10-92c4-a6140ecefd75Space.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\c051de17-b55a-4a10-92c4-a6140ecefd75Space.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\c9fc4b0f-f04c-462c-b91d-7741c85b3808WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/c9fc4b0f-f04c-462c-b91d-7741c85b3808WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\c9fc4b0f-f04c-462c-b91d-7741c85b3808WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\ced9470f-b914-4f7d-9f86-16efb2dc0a21Space.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/ced9470f-b914-4f7d-9f86-16efb2dc0a21Space.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\ced9470f-b914-4f7d-9f86-16efb2dc0a21Space.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\d0ef1a89-0160-449a-984d-729f304eb2cebgphoto.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/d0ef1a89-0160-449a-984d-729f304eb2cebgphoto.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\d0ef1a89-0160-449a-984d-729f304eb2cebgphoto.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\d27f4934-3a8a-486e-84f4-a3fa63aa5415WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/d27f4934-3a8a-486e-84f4-a3fa63aa5415WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\d27f4934-3a8a-486e-84f4-a3fa63aa5415WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\d683b8c3-eca9-425c-97bc-d26018c1ee2aWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/d683b8c3-eca9-425c-97bc-d26018c1ee2aWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\d683b8c3-eca9-425c-97bc-d26018c1ee2aWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\dc86c2ce-7afa-43e2-887f-baeaca07358ebgphoto.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/dc86c2ce-7afa-43e2-887f-baeaca07358ebgphoto.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\dc86c2ce-7afa-43e2-887f-baeaca07358ebgphoto.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e08da5e6-449b-4d70-b986-333fa52fa59dWhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/e08da5e6-449b-4d70-b986-333fa52fa59dWhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e08da5e6-449b-4d70-b986-333fa52fa59dWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e71dd315-68ff-4322-9534-880a104d87a3bgphoto.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/e71dd315-68ff-4322-9534-880a104d87a3bgphoto.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e71dd315-68ff-4322-9534-880a104d87a3bgphoto.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e7cdf6cb-3558-41bd-a2ba-9ba0594dab53WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/e7cdf6cb-3558-41bd-a2ba-9ba0594dab53WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e7cdf6cb-3558-41bd-a2ba-9ba0594dab53WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e84cd823-1b59-43e5-b653-fcf1e069c3f4WhatsApp Image 2023-02-05 at 18.46.10.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/e84cd823-1b59-43e5-b653-fcf1e069c3f4WhatsApp Image 2023-02-05 at 18.46.10.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\e84cd823-1b59-43e5-b653-fcf1e069c3f4WhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\f53fb6ec-eb5d-45ca-b369-389ddd0f548ebgphoto.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/f53fb6ec-eb5d-45ca-b369-389ddd0f548ebgphoto.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\f53fb6ec-eb5d-45ca-b369-389ddd0f548ebgphoto.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\f6e4d1c5-acab-4586-9825-3cf277e07116star.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>EraLogisticMVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/EraLogisticMVC</BasePath>
-      <RelativePath>uploads/Teams/f6e4d1c5-acab-4586-9825-3cf277e07116star.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\f6e4d1c5-acab-4586-9825-3cf277e07116star.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\f3780f24-8532-49fc-9db5-7afd33b5a23dWhatsApp Image 2023-02-05 at 18.46.10.jpg))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

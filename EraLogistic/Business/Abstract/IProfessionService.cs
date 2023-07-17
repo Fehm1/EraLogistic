@@ -7,6 +7,7 @@ namespace Business.Abstract
     public interface IProfessionService
     {
         Task<IDataResult<ProfessionDto>> Get(int professionId);
+        Task<IDataResult<ProfessionUpdateDto>> GetUpdateDto(int professionId);
         Task<IDataResult<ProfessionListDto>> GetAll();
         Task<IDataResult<ProfessionListDto>> GetAllByNonDeleted();
         Task<IDataResult<ProfessionListDto>> GetAllByDeleted();

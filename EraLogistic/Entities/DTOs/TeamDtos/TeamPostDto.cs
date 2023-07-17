@@ -12,6 +12,7 @@ namespace Entities.DTOs.TeamDto
 
         [DisplayName("Şəkil")]
         [Required(ErrorMessage = "{0} daxil edin!")]
+        [DataType(DataType.Upload)]
         public IFormFile Image { get; set; }
 
         [DisplayName("Ad, soyad")]

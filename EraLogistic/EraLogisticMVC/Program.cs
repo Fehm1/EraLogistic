@@ -1,11 +1,10 @@
 using Business.Extentions;
-using System.Text.Json;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews().AddJsonOptions(opt =>
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation().AddJsonOptions(opt =>
 {
     opt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;

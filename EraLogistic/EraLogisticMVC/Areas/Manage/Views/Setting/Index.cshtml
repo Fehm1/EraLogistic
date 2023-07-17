@@ -1,0 +1,269 @@
+﻿@model Entities.DTOs.SettingDto.SettingDto
+@{
+    ViewBag.Title = "Parametrlər";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-10 col-md-12 justify-content-start">
+            <h1>Parametrlər:</h1>
+        </div>
+
+        <div class="col-lg-2 col-md-12 justify-content-end">
+            <a asp-controller="setting" asp-action="update" asp-route-Id="@Model.Setting.Id" class="btn btn-warning"><span><i class="bi bi-pen-fill"></i></span> Yenilə</a>
+        </div>
+
+    </div>
+    <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+
+    <div>
+
+        <form name="aboutUs-form" method="post">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <img style="max-height: 150px; max-width: 150px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="~/uploads/Setting/@Model.Setting.HeaderLogo">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <img style="max-height: 150px; max-width: 150px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="~/uploads/Setting/@Model.Setting.FooterLogo">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="row">
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <label asp-for="Setting.AboutUsYellowTitle">Haqqımızda sarı başlıq:</label>
+                            <input readonly class="form-control" asp-for="Setting.AboutUsYellowTitle" />
+                        </div>
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <label asp-for="Setting.AboutUsWhiteTitle">Haqqımızda ağ başlıq:</label>
+                            <input readonly class="form-control" asp-for="Setting.AboutUsWhiteTitle" />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="Setting.AboutUsDescription">Haqqımızda kiçik açıqlama:</label>
+                                <input readonly class="form-control" asp-for="Setting.AboutUsDescription" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="row">
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <label asp-for="Setting.OurServiceYellowTitle">Servislər üçün sarı başlıq:</label>
+                            <input readonly class="form-control" asp-for="Setting.OurServiceYellowTitle" />
+                        </div>
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <label asp-for="Setting.OurServiceWhiteTitle">Servislər üçün ağ başlıq:</label>
+                            <input readonly class="form-control" asp-for="Setting.OurServiceWhiteTitle" />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="Setting.OurServiceDescription">Servislər üçün kiçik açıqlama:</label>
+                                <input readonly class="form-control" asp-for="Setting.OurServiceDescription" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="row">
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <label asp-for="Setting.VideoYellowTitle">Video üçün sarı başlıq:</label>
+                            <input readonly class="form-control" asp-for="Setting.VideoYellowTitle" />
+                        </div>
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <label asp-for="Setting.VideoWhiteTitle">Video üçün ağ başlıq:</label>
+                            <input readonly class="form-control" asp-for="Setting.VideoWhiteTitle" />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label asp-for="Setting.VideoLittleDescription">Video üçün qısa açıqlama:</label>
+                            <input readonly class="form-control" asp-for="Setting.VideoLittleDescription" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label asp-for="Setting.VideoLink">Video linki:</label>
+                            <input readonly class="form-control" asp-for="Setting.VideoLink" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="Setting.VideoDescription">Video üçün açıqlama:</label>
+                                <textarea asp-for="Setting.VideoDescription" readonly class="form-control" rows="4" style="height: 124px;">
+                                    @Model.Setting.VideoDescription
+                                </textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="row">
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <label asp-for="Setting.OurPackageYellowTitle">Paketlər üçün sarı başlıq:</label>
+                            <input readonly class="form-control" asp-for="Setting.OurPackageYellowTitle" />
+                        </div>
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <label asp-for="Setting.OurPackageWhiteTitle">Paketlər üçün ağ başlıq:</label>
+                            <input readonly class="form-control" asp-for="Setting.OurPackageWhiteTitle" />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="Setting.OurPackageDescription">Paketlər üçün kiçik açıqlama:</label>
+                                <input readonly class="form-control" asp-for="Setting.OurPackageDescription" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            <div class="form-group">
+                                <label asp-for="Setting.Email">Email:</label>
+                                <input readonly class="form-control" asp-for="Setting.Email" />
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Setting.Phone">Telefon:</label>
+                                <input readonly class="form-control" asp-for="Setting.Phone" />
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Setting.Address">Ünvan:</label>
+                                <input readonly class="form-control" asp-for="Setting.Address" />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="Setting.Instagram">Instagram:</label>
+                        <input readonly class="form-control" asp-for="Setting.Instagram" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.Facebook">Facebook:</label>
+                        <input readonly class="form-control" asp-for="Setting.Facebook" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.Twitter">Twitter:</label>
+                        <input readonly class="form-control" asp-for="Setting.Twitter" />
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="Setting.LinkedIn">LinkedIn:</label>
+                        <input readonly class="form-control" asp-for="Setting.LinkedIn" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.WhatsApp">WhatsApp:</label>
+                        <input readonly class="form-control" asp-for="Setting.WhatsApp" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.Youtube">Youtube:</label>
+                        <input readonly class="form-control" asp-for="Setting.Youtube" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="form-group">
+                        <label asp-for="Setting.GoogleMapsLocation">Google maps linki:</label>
+                        <textarea asp-for="Setting.GoogleMapsLocation" readonly class="form-control" rows="3">
+                            @Model.Setting.GoogleMapsLocation
+                        </textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</div>

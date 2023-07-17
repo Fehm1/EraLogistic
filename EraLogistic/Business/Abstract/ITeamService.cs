@@ -6,6 +6,7 @@ namespace Business.Abstract
     public interface ITeamService
     {
         Task<IDataResult<TeamDto>> Get(int teamId);
+        Task<IDataResult<TeamUpdateDto>> GetUpdateDto(int teamId);
         Task<IDataResult<TeamListDto>> GetAll();
         Task<IDataResult<TeamListDto>> GetAllByNonDeleted();
         Task<IDataResult<TeamListDto>> GetAllByDeleted();

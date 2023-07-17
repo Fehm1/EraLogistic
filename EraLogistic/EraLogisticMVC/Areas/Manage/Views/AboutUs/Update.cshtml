@@ -1,0 +1,134 @@
+﻿@model Entities.DTOs.AboutUsDto.AboutUsUpdateDto
+@{
+    ViewBag.Title = "Haqqımızda";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-8 col-md-12 justify-content-start">
+            <h1>Haqqımızda:</h1>
+        </div>
+
+        <div class="col-lg-4 col-md-12 justify-content-end">
+            <a asp-controller="aboutus" asp-action="index" class="btn btn-outline-danger"><span><i class="bi bi-x"></i></span> Geri</a>
+            <button form="aboutUs" type="submit" class="btn btn-success"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+        </div>
+
+    </div>
+    <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+
+    <div>
+        <form id="aboutUs" asp-action="update" method="post" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <input hidden="true" asp-for="Id" />
+            <input hidden="true" asp-for="Image" />
+
+            <div class="form-group">
+                <img style="max-height: 300px; max-width: 300px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="~/uploads/AboutUs/@Model.Image">
+                <input style="display: block; margin-left: auto; margin-right: auto;" asp-for="ImageFile" />
+                <span class="text-danger" asp-validation-for="ImageFile"></span>
+            </div>
+
+
+            <div class="row">
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Title">Başlıq:</label>
+                    <input  class="form-control" asp-for="Title" />
+                    <span class="text-danger" asp-validation-for="Title"></span>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="RedirectUrl">Yönləndirmə linki:</label>
+                    <input class="form-control" asp-for="RedirectUrl" />
+                    <span class="text-danger" asp-validation-for="RedirectUrl"></span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="Description">Açıqlama:</label>
+                        <textarea asp-for="Description" class="form-control" rows="4">
+                            @Model.Description
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="MissionDescription">Missiyamız:</label>
+                        <textarea asp-for="MissionDescription" name="MissionDescription" class="form-control" rows="4">
+                            @Model.MissionDescription
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="MissionDescription"></span>
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="AdvantagesDescription">Üstünlüklərimiz:</label>
+                        <textarea asp-for="AdvantagesDescription" class="form-control" rows="4">
+                            @Model.AdvantagesDescription
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="AdvantagesDescription"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="GuaranteedDescription">Zəmanətlərimiz:</label>
+                        <textarea asp-for="GuaranteedDescription" class="form-control" rows="4">
+                            @Model.GuaranteedDescription
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="GuaranteedDescription"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <label>Xüsusiyyətlərimiz:</label>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+
+                    <input class="form-control mb-3" asp-for="Feature1" />
+                    <span class="text-danger" asp-validation-for="Feature1"></span>
+
+                    <input class="form-control my-3" asp-for="Feature2" />
+                    <span class="text-danger" asp-validation-for="Feature2"></span>
+
+                    <input class="form-control my-3" asp-for="Feature3" />
+                    <span class="text-danger" asp-validation-for="Feature3"></span>
+
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+
+                    <input class="form-control mb-3" asp-for="Feature4" />
+                    <span class="text-danger" asp-validation-for="Feature4"></span>
+
+                    <input class="form-control my-3" asp-for="Feature5" />
+                    <span class="text-danger" asp-validation-for="Feature5"></span>
+
+                    <input class="form-control my-3" asp-for="Feature6" />
+                    <span class="text-danger" asp-validation-for="Feature6"></span>
+
+                </div>
+
+            </div>
+
+
+        </form>
+    </div>
+</div>

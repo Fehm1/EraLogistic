@@ -6,7 +6,6 @@ using Core.Utilities.Results.ComplexTypes;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using Entities.DTOs.SliderDto;
 using Entities.DTOs.TeamDto;
 using Microsoft.AspNetCore.Hosting;
 
@@ -190,6 +189,21 @@ namespace Business.Concrete
             });
         }
 
+        public async Task<IDataResult<TeamUpdateDto>> GetUpdateDto(int teamId)
+        {
+            var result = await _unitOfWork.Teams.AnyAsync(c => c.Id == teamId);
+            if (result)
+            {
+                var team = await _unitOfWork.Teams.GetAsync(c => c.Id == teamId);
+                var teamUpdateDto = _mapper.Map<TeamUpdateDto>(team);
+                return new DataResult<TeamUpdateDto>(ResultStatus.Success, teamUpdateDto);
+            }
+            else
+            {
+                return new DataResult<TeamUpdateDto>(ResultStatus.Error, "Üzv tapılmadı!", null);
+            }
+        }
+
         public async Task<IDataResult<TeamDto>> HardDelete(int teamId)
         {
             var team = await _unitOfWork.Teams.GetAsync(x => x.Id == teamId);
@@ -197,6 +211,7 @@ namespace Business.Concrete
             if (team != null)
             {
                 var deletedTeam = await _unitOfWork.Teams.DeleteAsync(team);
+                team.Image.DeleteImage(_env.WebRootPath, "uploads/Teams");
                 await _unitOfWork.SaveAsync();
 
                 return new DataResult<TeamDto>(ResultStatus.Success, $"{deletedTeam.Fullname} üzvü uğurla silindi!", new TeamDto
@@ -247,9 +262,9 @@ namespace Business.Concrete
 
             if (team != null)
             {
-                if (teamUpdateDto.Image != null)
+                if (teamUpdateDto.ImageFile != null)
                 {
-                    if (!teamUpdateDto.Image.IsImageContent())
+                    if (!teamUpdateDto.ImageFile.IsImageContent())
                     {
                         return new DataResult<TeamDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new TeamDto
                         {
@@ -259,7 +274,7 @@ namespace Business.Concrete
                         });
                     }
 
-                    if (!teamUpdateDto.Image.IsValidImageLength())
+                    if (!teamUpdateDto.ImageFile.IsValidImageLength())
                     {
                         return new DataResult<TeamDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new TeamDto
                         {
@@ -269,7 +284,7 @@ namespace Business.Concrete
                         });
                     }
 
-                    string newImage = teamUpdateDto.Image.SaveImage(_env.WebRootPath, "uploads/Teams");
+                    string newImage = teamUpdateDto.ImageFile.SaveImage(_env.WebRootPath, "uploads/Teams");
                     team.Image.DeleteImage(_env.WebRootPath, "uploads/Teams");
 
                     team.Image = newImage;

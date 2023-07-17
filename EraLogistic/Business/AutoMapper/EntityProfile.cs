@@ -16,28 +16,40 @@ namespace Business.AutoMapper
         public EntityProfile()
         {
             CreateMap<AboutUs, AboutUsDto>();
-            CreateMap<AboutUsPostDto, AboutUs>();
+            CreateMap<AboutUsUpdateDto, AboutUs>();
+            CreateMap<AboutUs, AboutUsUpdateDto>();
 
             CreateMap<Contact, ContactDto>();
             CreateMap<ContactPostDto, Contact>();
 
             CreateMap<Package, PackageDto>();
             CreateMap<PackagePostDto, Package>();
+            CreateMap<PackageUpdateDto, Package>();
+            CreateMap<Package, PackageUpdateDto>();
 
             CreateMap<Profession, ProfessionDto>();
             CreateMap<ProfessionPostDto, Profession>();
+            CreateMap<ProfessionUpdateDto, Profession>();
+            CreateMap<Profession, ProfessionUpdateDto>();
 
             CreateMap<Service, ServiceDto>();
             CreateMap<ServicePostDto, Service>();
+            CreateMap<ServiceUpdateDto, Service>();
+            CreateMap<Service, ServiceUpdateDto>();
 
             CreateMap<Setting, SettingDto>();
-            CreateMap<SettingPostDto, Setting>();
+            CreateMap<SettingUpdateDto, Setting>();
+            CreateMap<Setting, SettingUpdateDto>();
 
             CreateMap<Slider, SliderDto>();
             CreateMap<SliderPostDto, Slider>();
+            CreateMap<SliderUpdateDto, Slider>();
+            CreateMap<Slider, SliderUpdateDto>();
 
             CreateMap<Team, TeamDto>();
             CreateMap<TeamPostDto, Team>();
+            CreateMap<TeamUpdateDto, Team>();
+            CreateMap<Team, TeamUpdateDto>();
         }
     }
 }
