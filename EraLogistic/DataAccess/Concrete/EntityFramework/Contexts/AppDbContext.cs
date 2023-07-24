@@ -1,11 +1,12 @@
 ﻿using Core.Entities.Concrete;
 using DataAccess.Concrete.EntityFramework.Mappings;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework.Contexts
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext
     {
         public DbSet<AboutUs> AboutUs { get; set; }
         public DbSet<Contact> Contacts { get; set; }
@@ -25,6 +26,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new AboutUsMap());
             modelBuilder.ApplyConfiguration(new ContactMap());
             modelBuilder.ApplyConfiguration(new PackageMap());

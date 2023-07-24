@@ -10,10 +10,29 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation().AddJsonO
     opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
 });
 
+builder.Services.AddSession();
+
 builder.Services.LoadMyServices();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = new PathString("/Admin/Account/Login");
+    options.LogoutPath = new PathString("/Admin/Account/Logout");
+    options.Cookie = new CookieBuilder
+    {
+        Name = "EmaLogistic",
+        HttpOnly = true,
+        SameSite = SameSiteMode.Strict,
+        SecurePolicy = CookieSecurePolicy.SameAsRequest // Always
+    };
+    options.SlidingExpiration = true;
+    options.ExpireTimeSpan = System.TimeSpan.FromDays(7);
+    options.AccessDeniedPath = new PathString("/Admin/User/AccessDenied");
+});
 
 var app = builder.Build();
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

@@ -1,0 +1,32 @@
+﻿@model Entities.DTOs.RoleDtos.RoleUpdateDto
+@{
+    ViewBag.Title = "Rol yenilə";
+}
+
+<div>
+    <div>
+        <h1>Rol yenilə:</h1>
+    </div>
+    <div>
+        <form name="role-form" asp-action="update" method="post">
+            <div class="row">
+
+                <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+                <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="Name">Rol adı:</label>
+                    <input class="form-control" asp-for="Name" />
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+
+            </div>
+            <div>
+                <a asp-controller="role" asp-action="index" class="btn btn-outline-danger"><span><i class="bi bi-x"></i></span> Geri</a>
+                <button type="submit" class="btn btn-success"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+        </form>
+    </div>
+</div>

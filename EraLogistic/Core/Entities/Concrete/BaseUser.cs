@@ -8,6 +8,7 @@ namespace Core.Entities.Concrete
         public string Country { get; set; }
         public string Address { get; set; }
         public string ZipCode { get; set; }
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = false;
+        public bool IsActive { get; set; } = true;
     }
 }
