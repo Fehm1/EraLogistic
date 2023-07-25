@@ -1,0 +1,109 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model Entities.DTOs.UserDtos.UserPostDto
+@{
+    ViewBag.Title = "Admin əlavə et";
+    List<IdentityRole> roles = ViewBag.Roles;
+    List<IdentityUserRole<string>> userRoles = ViewBag.UserRoles;
+}
+
+<div class="container">
+    <div>
+        <h1>Admin əlavə et:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form name="aboutUs-form" method="post" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <div class="form-group">
+                <img style="max-height: 200px; max-width: 200px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png" />
+                <input style="display: block; margin-left: auto; margin-right: auto;" asp-for="ImageFile" />
+                <span class="text-danger" asp-validation-for="ImageFile"></span>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Name">Ad:</label>
+                    <input class="form-control" asp-for="Name" />
+                    <span asp-validation-for="Name" style="color: red"></span>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Surname">Soyad:</label>
+                    <input class="form-control" asp-for="Surname" />
+                    <span asp-validation-for="Surname" style="color: red"></span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label asp-for="UserName">İstifadəçi adı:</label>
+                        <input class="form-control" asp-for="UserName" />
+                        <span class="text-danger" asp-validation-for="UserName"></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label asp-for="RoleId" class="form-label">Rol: </label>
+                        <select asp-for="RoleId" class="form-select" style="display: block; width: 100%">
+                            <option selected>Birini seçin</option>
+
+                            @foreach (var role in roles)
+                            {
+                                <option value="@role.Id">@role.Name</option>
+                            }
+
+                        </select>
+                        <span asp-validation-for="RoleId" style="color: red"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Email">Email:</label>
+                    <input class="form-control" asp-for="Email" />
+                    <span asp-validation-for="Email" style="color: red"></span>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Phone">Telefon:</label>
+                    <input class="form-control" asp-for="Phone" />
+                    <span asp-validation-for="Phone" style="color: red"></span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Password">Parol:</label>
+                    <input class="form-control" asp-for="Password" />
+                    <span asp-validation-for="Password" style="color: red"></span>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="ConfirmPassword">Parolu təsdiqləyin:</label>
+                    <input class="form-control" asp-for="ConfirmPassword" />
+                    <span asp-validation-for="ConfirmPassword" style="color: red"></span>
+                </div>
+
+            </div>
+
+            <div>
+                <a asp-controller="user" asp-action="index" class="btn btn-outline-danger"><span><i class="bi bi-x"></i></span> Geri</a>
+                <button type="submit" class="btn btn-success"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+
+        </form>
+    </div>
+</div>

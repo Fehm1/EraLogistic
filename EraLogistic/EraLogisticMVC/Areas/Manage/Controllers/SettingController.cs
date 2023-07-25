@@ -18,7 +18,7 @@ namespace EraLogisticMVC.Areas.Manage.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var result = await _settingService.Get(27);
+            var result = await _settingService.Get(1);
             if (result.ResultStatus == ResultStatus.Success)
             {
                 return View(result.Data);

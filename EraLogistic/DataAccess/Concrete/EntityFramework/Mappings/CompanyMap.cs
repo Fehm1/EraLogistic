@@ -8,6 +8,8 @@ namespace DataAccess.Concrete.EntityFramework.Mappings
     {
         public void Configure(EntityTypeBuilder<Company> builder)
         {
+            builder.HasKey(x => x.Id);
+            builder.Property(a => a.Id).ValueGeneratedOnAdd();
             builder.Property(a => a.CompanyName).HasMaxLength(200);
             builder.Property(a => a.CompanyName).IsRequired();
             builder.Property(a => a.CompanyEmail).HasMaxLength(100);

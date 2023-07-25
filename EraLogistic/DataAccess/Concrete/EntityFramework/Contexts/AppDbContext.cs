@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework.Contexts
 {
-    public class AppDbContext : IdentityDbContext
+    public class AppDbContext : IdentityDbContext<Member>
     {
         public DbSet<AboutUs> AboutUs { get; set; }
         public DbSet<Contact> Contacts { get; set; }
@@ -16,7 +16,6 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Team> Teams { get; set; }
-        public DbSet<Member> Members { get; set; }
         public DbSet<Company> Companies { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -27,6 +26,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Member>();
             modelBuilder.ApplyConfiguration(new AboutUsMap());
             modelBuilder.ApplyConfiguration(new ContactMap());
             modelBuilder.ApplyConfiguration(new PackageMap());
@@ -35,7 +35,6 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
             modelBuilder.ApplyConfiguration(new SettingMap());
             modelBuilder.ApplyConfiguration(new SliderMap());
             modelBuilder.ApplyConfiguration(new TeamMap());
-            modelBuilder.ApplyConfiguration(new MemberMap());
             modelBuilder.ApplyConfiguration(new CompanyMap());
         }
     }

@@ -271,11 +271,6 @@ C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\ob
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\EraLogisticMVC.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\EraLogisticMVC.RazorAssemblyInfo.cache
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\EraLogisticMVC.RazorAssemblyInfo.cs
-C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets\msbuild.EraLogisticMVC.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets\msbuild.build.EraLogisticMVC.props
-C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.EraLogisticMVC.props
-C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.EraLogisticMVC.props
-C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
@@ -442,7 +437,6 @@ C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\bi
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\bin\Debug\net6.0\refs\System.Data.dll
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\bin\Debug\net6.0\refs\System.Diagnostics.Contracts.dll
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\bin\Debug\net6.0\refs\System.Diagnostics.Debug.dll
-C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\bin\Debug\net6.0\refs\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\bin\Debug\net6.0\refs\System.Diagnostics.EventLog.dll
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\bin\Debug\net6.0\refs\System.Diagnostics.FileVersionInfo.dll
 C:\Users\Fehmin\OneDrive\İş masası\Era logistic\EraLogistic\EraLogisticMVC\bin\Debug\net6.0\refs\System.Diagnostics.Process.dll

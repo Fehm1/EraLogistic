@@ -4,23 +4,23 @@
 
 namespace DataAccess.Migrations
 {
-    public partial class ContactTableUpdated : Migration
+    public partial class MemberUpdated : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<bool>(
-                name: "IsRead",
-                table: "Contacts",
-                type: "bit",
+            migrationBuilder.AddColumn<string>(
+                name: "RoleId",
+                table: "AspNetUsers",
+                type: "nvarchar(max)",
                 nullable: false,
-                defaultValue: false);
+                defaultValue: "");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "IsRead",
-                table: "Contacts");
+                name: "RoleId",
+                table: "AspNetUsers");
         }
     }
 }
